@@ -1,4 +1,7 @@
 ---
+apt_repos:
+  - ppa:solaar-unifying/stable
+
 apt_pkgs:
   - bash
   - bash-completion
@@ -12,6 +15,7 @@ apt_pkgs:
   - flameshot
   - shellcheck
   - htop
+  - solaar
 
 snap_pkgs:
   - discord

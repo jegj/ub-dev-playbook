@@ -1,4 +1,10 @@
 ---
+- name: Add additional apt repositories
+  ansible.builtin.apt_repository:
+    repo: "{{ item }}"
+    state: present
+  loop: "{{ apt_repos }}"
+
 - name: Install common apt packages
   ansible.builtin.apt:
     name: "{{ item }}"
