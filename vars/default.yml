@@ -11,3 +11,6 @@ apt_pkgs:
   - vim
   - flameshot
   - shellcheck
+
+nvm_version: 0.39.0
+nvm_url: https://raw.githubusercontent.com/nvm-sh/nvm/v{{ nvm_version }}/install.sh

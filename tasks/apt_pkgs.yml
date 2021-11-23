@@ -1,6 +1,13 @@
 ---
-- name: apt dist-upgrade
+- name: Install common apt packages
   ansible.builtin.apt:
     name: "{{ item }}"
     state: present
   loop: "{{ apt_pkgs }}"
+
+- name: Install nvm
+  register: nvm
+  shell: >
+    curl -o- {{ nvm_url }} | bash
+  args:
+    creates: "{{ ansible_env.HOME }}/.nvm/nvm.sh"
