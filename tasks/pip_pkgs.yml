@@ -1,0 +1,6 @@
+---
+- name: Install pip pkgs
+  ansible.builtin.pip:
+    name: "{{ item }}"
+    state: present
+  loop: "{{ pip_pkgs }}"

@@ -11,6 +11,29 @@ apt_pkgs:
   - vim
   - flameshot
   - shellcheck
+  - htop
+
+snap_pkgs:
+  - discord
+  - fast
+  - postman
+  - slack
+  - spotify
+  - teams
+  - telegram-desktop
+
+pip_pkgs:
+  - ansible-lint
+  - yamllint
+  - s3cmd
+  - docker
+  - boto
+  - boto3
+  - botocore
+  - terminator
+  - molecule
+  - molecule-docker
+  - setuptools
 
 nvm_version: 0.39.0
 nvm_url: https://raw.githubusercontent.com/nvm-sh/nvm/v{{ nvm_version }}/install.sh

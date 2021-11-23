@@ -1,0 +1,6 @@
+---
+- name: Install snap pkgs
+  community.general.snap:
+    name: "{{ item }}"
+    state: present
+  loop: "{{ snap_pkgs }}"

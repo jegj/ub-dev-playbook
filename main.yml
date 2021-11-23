@@ -18,3 +18,11 @@
     - import_tasks: tasks/apt_pkgs.yml
       tags:
         - apt
+
+    - import_tasks: tasks/snap_pkgs.yml
+      tags:
+        - snap
+
+    - import_tasks: tasks/pip_pkgs.yml
+      tags:
+        - pip
