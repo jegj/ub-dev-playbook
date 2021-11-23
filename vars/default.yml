@@ -1,0 +1,13 @@
+---
+apt_pkgs:
+  - bash
+  - bash-completion
+  - build-essential
+  - curl
+  - docker
+  - pgadmin4
+  - git
+  - gimp
+  - vim
+  - flameshot
+  - shellcheck

@@ -1,0 +1,17 @@
+---
+extends: default
+
+ignore: |
+  molecule/
+  roles/external/
+
+rules:
+  line-length:
+    max: 180
+    level: warning
+  truthy:
+    allowed-values:
+      - 'true'
+      - 'false'
+      - 'yes'
+      - 'no'

@@ -1,0 +1,6 @@
+---
+- name: apt dist-upgrade
+  ansible.builtin.apt:
+    name: "{{ item }}"
+    state: present
+  loop: "{{ apt_pkgs }}"

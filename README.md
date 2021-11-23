@@ -1,2 +1,16 @@
 # ub-dev-playbook
-Ansible playbook to install and configures most of the software I use on my Ubuntu Dev Env
+
+This playbook installs and configures my Ubuntu Dev Env
+
+## Installation
+
+1) [Install Ansible](https://docs.ansible.com/ansible/latest/installation_guide/index.html)
+
+2) Clone or download this repo
+
+3) Run playbook
+```sh
+ansible-playbook main.yml --ask-become-pass
+```
+
+## Defaults values
