@@ -1,0 +1,12 @@
+---
+- name: Download nvm-installer
+  get_url:
+    url: "{{ nvm_url }}"
+    dest: /tmp/nvm-installer.sh
+  changed_when: no
+
+- name: Execute the nvm-installer.sh
+  command: /tmp/nvm-installer.sh
+  register: test
+  args:
+    creates: "{{ ansible_env.HOME }}/.nvm/nvm.sh"
