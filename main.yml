@@ -3,7 +3,14 @@
   become: yes
 
   vars_files:
-    - vars/default.yml
+    - config.default.yml
+
+  pre_tasks:
+    - name: Include playbook configuration.
+      include_vars: "{{ item }}"
+      with_fileglob:
+        - "{{ playbook_dir }}/config.yml"
+      tags: ['always']
 
   tasks:
 

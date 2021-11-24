@@ -1,4 +1,8 @@
 ---
+nvm_version: 0.39.0
+# Franz https://meetfranz.com/
+franz_version: 5.7.0
+
 apt_repos:
   - ppa:solaar-unifying/stable
 
@@ -41,5 +45,12 @@ pip_pkgs:
   - molecule-docker
   - setuptools
 
-nvm_version: 0.39.0
 nvm_url: https://raw.githubusercontent.com/nvm-sh/nvm/v{{ nvm_version }}/install.sh
+
+deb_pkgs:
+
+  - name: franz
+    url: https://github.com/meetfranz/franz/releases/download/v{{ franz_version }}/franz_{{ franz_version }}_amd64.deb
+
+  - name: vscode
+    url: https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64
