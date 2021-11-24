@@ -16,6 +16,8 @@ apt_pkgs:
   - shellcheck
   - htop
   - solaar
+  - firefox
+  - terraform
 
 snap_pkgs:
   - discord
