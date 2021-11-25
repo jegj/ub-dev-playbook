@@ -4,3 +4,4 @@
     name: "{{ item }}"
     state: present
   loop: "{{ snap_pkgs }}"
+  become_user: root

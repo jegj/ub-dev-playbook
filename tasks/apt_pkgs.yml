@@ -3,10 +3,13 @@
   ansible.builtin.apt_repository:
     repo: "{{ item }}"
     state: present
+    update_cache: yes
   loop: "{{ apt_repos }}"
+  become_user: root
 
 - name: Install common apt packages
   ansible.builtin.apt:
     name: "{{ item }}"
     state: present
   loop: "{{ apt_pkgs }}"
+  become_user: root
