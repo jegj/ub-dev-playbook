@@ -18,6 +18,10 @@
       tags:
         - apt
 
+    - import_tasks: tasks/deb_local_pkgs.yml
+      tags:
+        - deb
+
     - import_tasks: tasks/snap_pkgs.yml
       tags:
         - snap

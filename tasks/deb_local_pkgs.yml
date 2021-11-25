@@ -1,0 +1,9 @@
+---
+
+- name: Install local deb packages
+  ansible.builtin.apt:
+    deb: "{{ item.url }}"
+  loop: "{{ deb_pkgs }}"
+  loop_control:
+    label: "{{ item.name }}"
+  become_user: root

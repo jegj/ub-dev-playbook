@@ -58,3 +58,9 @@ deb_pkgs:
 
   - name: vscode
     url: https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64
+
+  - name: zoom
+    url: https://zoom.us/client/latest/zoom_amd64.deb
+
+  - name: chrome
+    url: https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
