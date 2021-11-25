@@ -1,10 +1,12 @@
 ---
+# https://github.com/nvm-sh/nvm
 nvm_version: 0.39.0
 # Franz https://meetfranz.com/
 franz_version: 5.7.0
 
 apt_repos:
   - ppa:solaar-unifying/stable
+  - ppa:cappelikan/ppa
 
 apt_pkgs:
   - bash
@@ -16,12 +18,13 @@ apt_pkgs:
   - git
   - gimp
   - vim
-  - flameshot
-  - shellcheck
+  - flameshot                        # https://github.com/flameshot-org/flameshot
+  - shellcheck                       # https://github.com/koalaman/shellcheck
   - htop
-  - solaar
+  - solaar                           # https://pwr-solaar.github.io/Solaar/
   - firefox
   - terraform
+  - mainline                         # https://github.com/bkw777/mainline
 
 snap_pkgs:
   - discord
@@ -31,6 +34,7 @@ snap_pkgs:
   - spotify
   - teams
   - telegram-desktop
+  - cacher                           # https://www.cacher.io/
 
 pip_pkgs:
   - ansible-lint
