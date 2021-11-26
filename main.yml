@@ -33,3 +33,7 @@
     - import_tasks: tasks/nvm.yml
       tags:
         - nvm
+
+    - import_tasks: tasks/awscli.yml
+      tags:
+        - awscli
