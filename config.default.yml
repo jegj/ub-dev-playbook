@@ -9,6 +9,7 @@ apt_repos:
   - ppa:cappelikan/ppa
 
 apt_pkgs:
+  - apt-transport-https
   - bash
   - bash-completion
   - build-essential
@@ -26,10 +27,11 @@ apt_pkgs:
   - terraform
   - mainline                         # https://github.com/bkw777/mainline
   - unzip
+  - w3m
 
 snap_pkgs:
   - discord
-  - fast
+  - fast                             # https://snapcraft.io/fast
   - postman
   - slack
   - spotify
@@ -67,3 +69,6 @@ deb_pkgs:
 
   - name: chrome
     url: https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+
+  - name: steam
+    url: https://repo.steampowered.com/steam/archive/precise/steam_latest.deb
