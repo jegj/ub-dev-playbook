@@ -28,6 +28,8 @@ apt_pkgs:
   - mainline                         # https://github.com/bkw777/mainline
   - unzip
   - w3m
+  - tmux
+  - nmap
 
 snap_pkgs:
   - discord
