@@ -37,3 +37,7 @@
     - import_tasks: tasks/awscli.yml
       tags:
         - awscli
+
+    - import_tasks: tasks/local_settings.yml
+      tags:
+        - local

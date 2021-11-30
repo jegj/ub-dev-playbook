@@ -1,0 +1,7 @@
+---
+- name: Copy vimrc
+  ansible.builtin.copy:
+    src: files/.vimrc
+    dest: "{{ ansible_env.HOME }}/.vimrc"
+    backup: yes
+    mode: '0664'
