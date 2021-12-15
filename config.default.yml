@@ -3,6 +3,8 @@
 nvm_version: 0.39.0
 # Franz https://meetfranz.com/
 franz_version: 5.7.0
+# Vagrant https://www.vagrantup.com/
+vagrant_version: 2.2.19
 
 apt_repos:
   - ppa:solaar-unifying/stable
@@ -74,3 +76,9 @@ deb_pkgs:
 
   - name: steam
     url: https://repo.steampowered.com/steam/archive/precise/steam_latest.deb
+
+  - name: vagrant
+    url: https://releases.hashicorp.com/vagrant/{{ vagrant_version }}/vagrant_{{ vagrant_version }}_x86_64.deb
+
+  - name: virtualbox
+    url: https://download.virtualbox.org/virtualbox/6.1.30/virtualbox-6.1_6.1.30-148432~Ubuntu~eoan_amd64.deb
