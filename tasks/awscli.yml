@@ -1,9 +1,4 @@
 ---
-- name: Get awscli zip file
-  get_url:
-    url: "{{ awscli_url }}"
-    dest: "/tmp/awscliv2.zip"
-
 - name: Check if aws cli is already installed
   command: aws --version
   ignore_errors: yes
@@ -12,7 +7,7 @@
 
 - name: Extract awscli
   ansible.builtin.unarchive:
-    src: /tmp/awscliv2.zip
+    src: "{{ awscli_url }}"
     dest: /tmp
     remote_src: yes
   changed_when: no
