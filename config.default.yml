@@ -32,6 +32,7 @@ apt_pkgs:
   - w3m
   - tmux
   - nmap
+  - iotop
 
 snap_pkgs:
   - discord
