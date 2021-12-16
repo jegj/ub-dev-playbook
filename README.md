@@ -24,6 +24,16 @@ ansible-playbook main.yml --ask-become-pass --become-user=<ADMIN_ACCOUNT>
 
 Create a config.yml file and setting the overrides in that file. Follow [config.default.yml](./config.default.yml) for more information
 
+## Tags
+
+- `apt` : APT packages
+- `deb` : Local deb packages
+- `snap` : Snap packages
+- `pip` : Pip dependecies
+- `nvm` : https://github.com/nvm-sh/nvm
+- `awscli` : AWS CLI
+- `local` : Local settings -> alias + .bashrc
+
 ## Aplications
 
 - [nvm](https://github.com/nvm-sh/nvm)
