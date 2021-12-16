@@ -1,7 +1,7 @@
 ---
 - hosts: all
   become: yes
-  gather_facts: no
+  gather_facts: yes
 
   vars_files:
     - config.default.yml
@@ -42,7 +42,3 @@
     - import_tasks: tasks/local_settings.yml
       tags:
         - local
-
-    - import_tasks: tasks/git_alias.yml
-      tags:
-        - alias
