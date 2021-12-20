@@ -26,12 +26,13 @@ Create a config.yml file and setting the overrides in that file. Follow [config.
 
 ## Tags
 
+- `sw`  : All the software ( `apt` + `deb` + `snap` + `pip` + `nvm` + `awscli`)
 - `apt` : APT packages
 - `deb` : Local deb packages
 - `snap` : Snap packages
 - `pip` : Pip dependecies
-- `nvm` : https://github.com/nvm-sh/nvm
-- `awscli` : AWS CLI
+<!-- - `nvm` : https://github.com/nvm-sh/nvm
+- `awscli` : AWS CLI -->
 - `local` : Local settings -> alias + .bashrc
 
 ## Aplications
