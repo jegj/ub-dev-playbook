@@ -43,6 +43,7 @@ snap_pkgs:
   - teams
   - telegram-desktop
   - cacher                           # https://www.cacher.io/
+  - remmina                          # https://remmina.org/
 
 pip_pkgs:
   - ansible-lint
