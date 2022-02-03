@@ -33,6 +33,7 @@ apt_pkgs:
   - tmux
   - nmap
   - iotop
+  - neovim
 
 snap_pkgs:
   - discord
