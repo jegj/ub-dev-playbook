@@ -34,6 +34,7 @@ Create a config.yml file and setting the overrides in that file. Follow [config.
 <!-- - `nvm` : https://github.com/nvm-sh/nvm
 - `awscli` : AWS CLI -->
 - `local` : Local settings -> alias + .bashrc
+- `alias` : Add common alias
 
 ## Aplications
 
@@ -53,3 +54,4 @@ Create a config.yml file and setting the overrides in that file. Follow [config.
 - [teams](https://www.microsoft.com/en-us/microsoft-teams/group-chat-software)
 - [telegram-desktop](https://telegram.org/)
 - [cacher](https://www.cacher.io/)
+- [neovim](https://github.com/neovim/neovim)

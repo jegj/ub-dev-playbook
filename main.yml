@@ -46,3 +46,7 @@
     - import_tasks: tasks/local_settings.yml
       tags:
         - local
+
+    - import_tasks: tasks/alias.yml
+      tags:
+        - alias
