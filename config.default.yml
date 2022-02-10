@@ -34,6 +34,7 @@ apt_pkgs:
   - nmap
   - iotop
   - neovim
+  - thunderbird
 
 snap_pkgs:
   - discord
