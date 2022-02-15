@@ -31,7 +31,7 @@
     scope: global
     value: push
 
-- name: Add push alias
+- name: Add log alias
   community.general.git_config:
     name: alias.lg
     scope: global
@@ -42,10 +42,3 @@
     name: alias.last
     scope: global
     value: log -1 HEAD --stat
-
-- name: Add .bashrc settings
-  ansible.builtin.blockinfile:
-    block: "{{ lookup('file', 'files/bashrc') }}"
-    path: "{{ ansible_env.HOME }}/.bashrc"
-    backup: yes
-    marker: "# {mark} .BASHRC LOCAL SETTINGS"
