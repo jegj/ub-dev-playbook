@@ -3,8 +3,10 @@ syntax enable
 set cursorline
 set nobackup
 set number
-set mouse-=a
+set mouse=v                             " middle-click paste with
+set mouse=a                             " enable mouse click
 set numberwidth=1
+set hlsearch                            " highlight search
 set smarttab
 filetype on                             " enable filetype detection
 set clipboard=unnamed                   " https://stackoverflow.com/questions/30691466/what-is-difference-between-vims-clipboard-unnamed-and-unnamedplus-settings

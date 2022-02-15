@@ -6,6 +6,13 @@
     backup: yes
     mode: '0664'
 
+- name: Copy neovim init vim
+  ansible.builtin.copy:
+    src: files/init.vim
+    dest: "{{ ansible_env.HOME }}/.config/nvim/init.vim"
+    backup: yes
+    mode: '0664'
+
 - name: Add checkout alias
   community.general.git_config:
     name: alias.co
