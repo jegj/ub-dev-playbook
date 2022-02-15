@@ -39,7 +39,7 @@ let g:airline_theme = 'codedark'
 highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
 autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
-autocmd BufWinEnter * match ExtraWhitespacextraWhitespace /\s\+$/
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
 autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
@@ -58,9 +58,10 @@ map <Leader>ob :Buffers<cr>
 " Search word
 nmap <Leader>f <Plug>(easymotion-s2)
 " Search files
-nmap <Leader>p :GFiles<CR>
+nmap <Leader>p :GFiles --cached --others --exclude-standard<CR>
 " Open tree view
 nmap <Leader>nt :NERDTreeFocus<CR>
+map <leader>lo :NERDTreeFind<CR>
 " shorter commands
 cnoreabbrev tree NERDTreeToggle
 cnoreabbrev blame :Git blame
@@ -81,7 +82,8 @@ map <leader>l :wincmd l<CR>
 "nnoremap <C-o> :sp<CR>
 nnoremap <C-e> :vsp<CR>
 " Map yanked to clipboard
-vnoremap <C-c> "*y
+vnoremap <C-c> "+y
+vnoremap <C-v> "+p
 " Line moving
 "" Normal mode
 nnoremap <C-j> :m .+1<CR>=gn
@@ -93,13 +95,22 @@ inoremap <C-k> <ESC>:m .-2<CR>==gi
 vnoremap <C-j> :m '>+1<CR>gv=gv
 vnoremap <C-k> :m '<-2<CR>gv=gv
 " Comment line
-" [count] <leader> cn  Comment section
-" [count] <leader> cu  Uncomment section
-" NERDTree
-" Start NERDTree and leave the cursor in it.
-" autocmd VimEnter * NERDTree
-" Start NERDTree and put the cursor back in the other window.
-" autocmd VimEnter * NERDTree | wincmd p
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
+" Use compact syntax for prettified multi-line comments
+let g:NERDCompactSexyComs = 1
+" Align line-wise comment delimiters flush left instead of following code indentation
+let g:NERDDefaultAlign = 'left'
+" Set a language to use its alternate delimiters by default
+let g:NERDAltDelims_java = 1
+" Add your own custom formats or override the defaults
+let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/'  }  }
+" Allow commenting and inverting empty lines (useful when commenting a region)
+let g:NERDCommentEmptyLines = 1
+" Enable trimming of trailing whitespace when uncommenting
+let g:NERDTrimTrailingWhitespace = 1
+" Enable NERDCommenterToggle to check all selected lines is commented or not
+let g:NERDToggleCheckAllLines = 1"
 
 " CoC
 nmap <leader>gd <Plug>(coc-definition)
