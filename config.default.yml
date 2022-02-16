@@ -35,6 +35,7 @@ apt_pkgs:
   - iotop
   - neovim
   - thunderbird
+  - zfz                              # https://github.com/junegunn/fzf#using-linux-package-managers
 
 snap_pkgs:
   - discord
