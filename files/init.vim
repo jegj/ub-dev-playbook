@@ -55,12 +55,16 @@ autocmd BufWritePre * :call TrimWhitespace()
 
 " buffers
 map <Leader>ob :Buffers<cr>
+map <C-Tab> :bnext<CR>
+"map <C-K> :bnext<CR>
+
 " Search word
 nmap <Leader>f <Plug>(easymotion-s2)
 " Search files
 nmap <Leader>p :GFiles --cached --others --exclude-standard<CR>
 " Open tree view
 nmap <Leader>nt :NERDTreeFocus<CR>
+"" Locate current file in the treeview
 map <leader>lo :NERDTreeFind<CR>
 " shorter commands
 cnoreabbrev tree NERDTreeToggle
@@ -79,21 +83,23 @@ map <leader>j :wincmd j<CR>
 map <leader>k :wincmd k<CR>
 map <leader>l :wincmd l<CR>
 " Split panel
-"nnoremap <C-o> :sp<CR>
+nnoremap <C-o> :sp<CR>
 nnoremap <C-e> :vsp<CR>
 " Map yanked to clipboard
 vnoremap <C-c> "+y
 vnoremap <C-v> "+p
+
 " Line moving
 "" Normal mode
-nnoremap <C-j> :m .+1<CR>=gn
-nnoremap <C-k> :m .-2<CR>=gn
+nnoremap <C-j> :m .+1<CR>==
+nnoremap <C-k> :m .-2<CR>==
 "" Insert mode
 inoremap <C-j> <ESC>:m .+1<CR>==gi
 inoremap <C-k> <ESC>:m .-2<CR>==gi
 "" Visual mode
 vnoremap <C-j> :m '>+1<CR>gv=gv
 vnoremap <C-k> :m '<-2<CR>gv=gv
+
 " Comment line
 " Add spaces after comment delimiters by default
 let g:NERDSpaceDelims = 1
@@ -123,3 +129,14 @@ nmap <leader>g] <Plug>(coc-diagnostic-next)
 nmap <silent> <leader>gp <Plug>(coc-diagnostic-prev-error)
 nmap <silent> <leader>gn <Plug>(coc-diagnostic-next-error)
 nnoremap <leader>cr :CocRestart
+
+" Tab completion
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
