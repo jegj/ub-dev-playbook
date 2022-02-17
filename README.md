@@ -31,7 +31,6 @@ Create a config.yml file and setting the overrides in that file. Follow [config.
 - `deb` : Local deb packages
 - `snap` : Snap packages
 - `pip` : Pip dependecies
-<!-- - `nvm` : https://github.com/nvm-sh/nvm
 - `awscli` : AWS CLI -->
 - `local` : Local settings -> alias + .bashrc
 - `alias` : Add common alias

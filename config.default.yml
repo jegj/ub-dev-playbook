@@ -36,6 +36,7 @@ apt_pkgs:
   - neovim
   - thunderbird
   - zfz                              # https://github.com/junegunn/fzf#using-linux-package-managers
+  - silversearcher-ag                # https://github.com/ggreer/the_silver_searcher (Required for https://github.com/junegunn/fzf.vim)
 
 snap_pkgs:
   - discord

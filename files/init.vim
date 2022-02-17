@@ -18,8 +18,8 @@ call plug#begin('~/.vim/plugged')
   Plug 'ryanoasis/vim-devicons'
   Plug 'editorconfig/editorconfig-vim'
   Plug 'mg979/vim-visual-multi', {'branch': 'master'}
-  "Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  Plug 'plasticboy/vim-markdown'
 call plug#end()
 
 set t_ut=
@@ -34,6 +34,9 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_nr_show = 1
 let g:deoplete#enable_at_startup = 1
 let g:airline_theme = 'codedark'
+
+" Markdown 
+let g:vim_markdown_folding_disabled = 1
 
 " Highlight unwanted spaces
 highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
@@ -55,11 +58,10 @@ autocmd BufWritePre * :call TrimWhitespace()
 
 " buffers
 map <Leader>ob :Buffers<cr>
-map <C-Tab> :bnext<CR>
-"map <C-K> :bnext<CR>
 
 " Search word
 nmap <Leader>f <Plug>(easymotion-s2)
+map  <Leader>F :Ag<CR>
 " Search files
 nmap <Leader>p :GFiles --cached --others --exclude-standard<CR>
 " Open tree view
