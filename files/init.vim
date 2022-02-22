@@ -61,7 +61,8 @@ map <Leader>ob :Buffers<cr>
 
 " Search word
 nmap <Leader>f <Plug>(easymotion-s2)
-map  <Leader>F :Ag<CR>
+" Search word on the current project
+map  <Leader>F :Ag<CR>  
 " Search files
 nmap <Leader>p :GFiles --cached --others --exclude-standard<CR>
 " Open tree view
@@ -73,6 +74,7 @@ cnoreabbrev tree NERDTreeToggle
 cnoreabbrev blame :Git blame
 cnoreabbrev find NERDTreeFind
 cnoreabbrev diff Gdiff
+" save/quit
 nmap <Leader>w :w<CR>
 nmap <Leader>q :q<CR>
 " git
