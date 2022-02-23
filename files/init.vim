@@ -16,10 +16,12 @@ call plug#begin('~/.vim/plugged')
   Plug 'tpope/vim-fugitive'
   Plug 'preservim/nerdcommenter'
   Plug 'ryanoasis/vim-devicons'
-  Plug 'editorconfig/editorconfig-vim'
+  Plug 'editorconfig/editorconfig-vim'                 " Follow editorconfig file
   Plug 'mg979/vim-visual-multi', {'branch': 'master'}
-  Plug 'neoclide/coc.nvim', {'branch': 'release'}
-  Plug 'plasticboy/vim-markdown'
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}      " Autocomplete
+  Plug 'plasticboy/vim-markdown'                       " Markdown syntax
+  Plug 'https://github.com/preservim/tagbar'           " Tagbar for code navigation
+  Plug 'mhinz/vim-signify'                             " https://github.com/mhinz/vim-signify
 call plug#end()
 
 set t_ut=
@@ -58,8 +60,9 @@ autocmd BufWritePre * :call TrimWhitespace()
 
 " buffers
 map <Leader>ob :Buffers<cr>
-
-" Search word
+" code tag search
+nmap <Leader>tgs :TagbarToggle<CR>
+" Search word on the current file
 nmap <Leader>f <Plug>(easymotion-s2)
 " Search word on the current project
 map  <Leader>F :Ag<CR>  
@@ -92,6 +95,8 @@ nnoremap <C-e> :vsp<CR>
 " Map yanked to clipboard
 vnoremap <C-c> "+y
 vnoremap <C-v> "+p
+" Copy current file path
+nnoremap <leader>kp :let @+=expand("%")<CR>
 
 " Line moving
 "" Normal mode
