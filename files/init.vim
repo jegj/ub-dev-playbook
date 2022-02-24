@@ -3,7 +3,8 @@ let &packpath=&runtimepath
 source ~/.vimrc
 call plug#begin('~/.vim/plugged')
   " Temas
-  Plug 'tomasiser/vim-code-dark'
+  " Plug 'tomasiser/vim-code-dark'
+  Plug 'ghifarit53/tokyonight-vim'
   " IDE
   Plug 'preservim/nerdtree'
   Plug 'Xuyuanp/nerdtree-git-plugin'
@@ -13,11 +14,11 @@ call plug#begin('~/.vim/plugged')
   Plug 'junegunn/fzf'
   Plug 'junegunn/fzf.vim'
   Plug 'airblade/vim-gitgutter'
-  Plug 'tpope/vim-fugitive'
+  Plug 'tpope/vim-fugitive'                            " https://github.com/tpope/vim-fugitive
   Plug 'preservim/nerdcommenter'
   Plug 'ryanoasis/vim-devicons'
-  Plug 'editorconfig/editorconfig-vim'                 " Follow editorconfig file
-  Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+  Plug 'editorconfig/editorconfig-vim'                 " https://github.com/editorconfig/editorconfig-vim -> Follow editorconfig file
+  Plug 'mg979/vim-visual-multi', {'branch': 'master'}  " https://github.com/mg979/vim-visual-multi
   Plug 'neoclide/coc.nvim', {'branch': 'release'}      " Autocomplete
   Plug 'plasticboy/vim-markdown'                       " Markdown syntax
   Plug 'https://github.com/preservim/tagbar'           " Tagbar for code navigation
@@ -25,7 +26,14 @@ call plug#begin('~/.vim/plugged')
 call plug#end()
 
 set t_ut=
-colorscheme codedark
+
+set termguicolors
+
+let g:tokyonight_style = 'night' " available: night, storm
+let g:tokyonight_enable_italic = 1
+
+colorscheme tokyonight
+
 let g:codedark_term256=1
 let NERDTreeQuitOnOpen=0
 let NERDTreeShowHidden=1
@@ -35,7 +43,7 @@ let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_nr_show = 1
 let g:deoplete#enable_at_startup = 1
-let g:airline_theme = 'codedark'
+let g:airline_theme = 'tokyonight'
 
 " Markdown 
 let g:vim_markdown_folding_disabled = 1
