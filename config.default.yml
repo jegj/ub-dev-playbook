@@ -49,6 +49,7 @@ snap_pkgs:
   - telegram-desktop
   - cacher                           # https://www.cacher.io/
   - remmina                          # https://remmina.org/
+  - dbeaver-ce                       # https://dbeaver.io/
 
 pip_pkgs:
   - ansible-lint
