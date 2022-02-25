@@ -20,6 +20,9 @@ ansible-playbook main.yml --ask-become-pass --become-user=<ADMIN_ACCOUNT>
 ```
 
 ## Default values
+
+Check [config.default.yml](./config.default.yml)
+
 ## Override Default values
 
 Create a config.yml file and setting the overrides in that file. Follow [config.default.yml](./config.default.yml) for more information
