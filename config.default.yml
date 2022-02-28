@@ -94,6 +94,8 @@ deb_pkgs:
 bash_alias_path: "{{ ansible_env.HOME }}/.bash_aliases"
 
 bash_aliases:
+  - {alias: 'sudo', command: 'sudo '}
   - {alias: 'v', command: 'nvim'}
   - {alias: 'aptlist', command: 'apt list --upgradable'}
   - {alias: 'i', command: 'ip -c -brie a'}
+  - {alias: 'sz', command: 'du /* -xhs --exclude=/proc  | sort -hr' }
