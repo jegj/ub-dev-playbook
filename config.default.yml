@@ -38,6 +38,7 @@ apt_pkgs:
   - zfz                              # https://github.com/junegunn/fzf#using-linux-package-managers
   - silversearcher-ag                # https://github.com/ggreer/the_silver_searcher (Required for https://github.com/junegunn/fzf.vim)
   - exuberant-ctags                  # http://ctags.sourceforge.net/  Code navigation for neovim
+  - ubuntu-restricted-extras         # configure the codecs necessary to play media files
 
 snap_pkgs:
   - discord
