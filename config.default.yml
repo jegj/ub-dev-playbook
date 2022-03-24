@@ -40,6 +40,7 @@ apt_pkgs:
   - exuberant-ctags                  # http://ctags.sourceforge.net/  Code navigation for neovim
   - ubuntu-restricted-extras         # configure the codecs necessary to play media files
   - keepassxc                        # https://keepassxc.org/
+  - ncdu                             # Clean up disks
 
 snap_pkgs:
   - discord
