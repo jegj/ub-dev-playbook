@@ -66,6 +66,7 @@ pip_pkgs:
   - molecule
   - molecule-docker
   - setuptools
+  - awslogs
 
 nvm_url: https://raw.githubusercontent.com/nvm-sh/nvm/v{{ nvm_version }}/install.sh
 
