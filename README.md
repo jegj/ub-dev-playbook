@@ -57,3 +57,8 @@ Create a config.yml file and setting the overrides in that file. Follow [config.
 - [telegram-desktop](https://telegram.org/)
 - [cacher](https://www.cacher.io/)
 - [neovim](https://github.com/neovim/neovim)
+
+## TODO
+
+- Set up nvidia persistance mode to avoid GPU crash 
+`/usr/bin/nvidia-smi -pm 1`
