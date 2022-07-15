@@ -62,3 +62,6 @@ Create a config.yml file and setting the overrides in that file. Follow [config.
 
 - Set up nvidia persistance mode to avoid GPU crash 
 `/usr/bin/nvidia-smi -pm 1`
+
+
+https://community.openvpn.net/openvpn/wiki/OpenVPN3Linux
