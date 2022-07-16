@@ -60,8 +60,8 @@ Create a config.yml file and setting the overrides in that file. Follow [config.
 
 ## TODO
 
-- Set up nvidia persistance mode to avoid GPU crash 
-`/usr/bin/nvidia-smi -pm 1`
-
-
-https://community.openvpn.net/openvpn/wiki/OpenVPN3Linux
+- ~~Set up nvidia persistance mode to avoid GPU crash  `/usr/bin/nvidia-smi -pm 1` [Deprecated]~~
+- Install https://community.openvpn.net/openvpn/wiki/OpenVPN3Linux
+- Fix nvm installation
+- Set up /etc/hosts
+- Check vscode sync  or install vscode settings extensions
