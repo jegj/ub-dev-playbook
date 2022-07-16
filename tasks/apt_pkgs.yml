@@ -1,4 +1,12 @@
 ---
+
+- name: Add apt keys
+  ansible.builtin.apt_key:
+    url: "{{ item }}"
+    state: present
+  loop: "{{ apt_key }}"
+  become_user: root
+
 - name: Add additional apt repositories
   ansible.builtin.apt_repository:
     repo: "{{ item }}"

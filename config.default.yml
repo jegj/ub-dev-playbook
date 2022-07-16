@@ -6,9 +6,15 @@ franz_version: 5.7.0
 # Vagrant https://www.vagrantup.com/
 vagrant_version: 2.2.19
 
+apt_key:
+  - https://www.pgadmin.org/static/packages_pgadmin_org.pub
+  - https://apt.releases.hashicorp.com/gpg
+
 apt_repos:
   - ppa:solaar-unifying/stable
   - ppa:cappelikan/ppa
+  - deb https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/focal pgadmin4 main
+  - deb [arch=amd64] https://apt.releases.hashicorp.com focal main
 
 apt_pkgs:
   - apt-transport-https
@@ -35,12 +41,14 @@ apt_pkgs:
   - iotop
   - neovim
   - thunderbird
-  - zfz                              # https://github.com/junegunn/fzf#using-linux-package-managers
+    #- zfz                           # https://github.com/junegunn/fzf#using-linux-package-managers
   - silversearcher-ag                # https://github.com/ggreer/the_silver_searcher (Required for https://github.com/junegunn/fzf.vim)
   - exuberant-ctags                  # http://ctags.sourceforge.net/  Code navigation for neovim
   - ubuntu-restricted-extras         # configure the codecs necessary to play media files
   - keepassxc                        # https://keepassxc.org/
   - ncdu                             # Clean up disks
+  - terminator
+  - gnome-tweaks                     # https://gitlab.gnome.org/GNOME/gnome-tweaks
 
 snap_pkgs:
   - discord
@@ -62,7 +70,6 @@ pip_pkgs:
   - boto
   - boto3
   - botocore
-  - terminator
   - molecule
   - molecule-docker
   - setuptools
