@@ -50,6 +50,7 @@ apt_pkgs:
   - terminator
   - gnome-tweaks # https://gitlab.gnome.org/GNOME/gnome-tweaks
   - jq
+  - libreoffice
 
 snap_pkgs:
   - discord
