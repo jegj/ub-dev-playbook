@@ -51,7 +51,7 @@ apt_pkgs:
   - gnome-tweaks # https://gitlab.gnome.org/GNOME/gnome-tweaks
   - jq
   - libreoffice
-  - smartmontools
+  - smartmontools # https://www.smartmontools.org/
 
 snap_pkgs:
   - discord

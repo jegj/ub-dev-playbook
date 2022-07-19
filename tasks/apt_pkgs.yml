@@ -1,5 +1,4 @@
 ---
-
 - name: Add apt keys
   ansible.builtin.apt_key:
     url: "{{ item }}"
