@@ -27,13 +27,13 @@ apt_pkgs:
   - git
   - gimp
   - vim
-  - flameshot # https://github.com/flameshot-org/flameshot
-  - shellcheck # https://github.com/koalaman/shellcheck
+  - flameshot                        # https://github.com/flameshot-org/flameshot
+  - shellcheck                       # https://github.com/koalaman/shellcheck
   - htop
-  - solaar # https://pwr-solaar.github.io/Solaar/
+  - solaar                           # https://pwr-solaar.github.io/Solaar/
   - firefox
   - terraform
-  - mainline # https://github.com/bkw777/mainline
+  - mainline                         # https://github.com/bkw777/mainline
   - unzip
   - w3m
   - tmux
@@ -41,29 +41,28 @@ apt_pkgs:
   - iotop
   - neovim
   - thunderbird
-    #- zfz                           # https://github.com/junegunn/fzf#using-linux-package-managers
-  - silversearcher-ag # https://github.com/ggreer/the_silver_searcher (Required for https://github.com/junegunn/fzf.vim)
-  - exuberant-ctags # http://ctags.sourceforge.net/  Code navigation for neovim
-  - ubuntu-restricted-extras # configure the codecs necessary to play media files
-  - keepassxc # https://keepassxc.org/
-  - ncdu # Clean up disks
+  - silversearcher-ag                # https://github.com/ggreer/the_silver_searcher (Required for https://github.com/junegunn/fzf.vim)
+  - exuberant-ctags                  # http://ctags.sourceforge.net/  Code navigation for neovim
+  - ubuntu-restricted-extras         # configure the codecs necessary to play media files
+  - keepassxc                        # https://keepassxc.org/
+  - ncdu                             # Clean up disks
   - terminator
-  - gnome-tweaks # https://gitlab.gnome.org/GNOME/gnome-tweaks
+  - gnome-tweaks                     # https://gitlab.gnome.org/GNOME/gnome-tweaks
   - jq
   - libreoffice
-  - smartmontools # https://www.smartmontools.org/
+  - smartmontools                    # https://www.smartmontools.org/
 
 snap_pkgs:
   - discord
-  - fast # https://snapcraft.io/fast
+  - fast                             # https://snapcraft.io/fast
   - postman
   - slack
   - spotify
   - teams
   - telegram-desktop
-  - cacher # https://www.cacher.io/
-  - remmina # https://remmina.org/
-  - dbeaver-ce # https://dbeaver.io/
+  - cacher                           # https://www.cacher.io/
+  - remmina                          # https://remmina.org/
+  - dbeaver-ce                       # https://dbeaver.io/
 
 pip_pkgs:
   - ansible-lint
@@ -107,8 +106,8 @@ deb_pkgs:
 bash_alias_path: "{{ ansible_env.HOME }}/.bash_aliases"
 
 bash_aliases:
-  - { alias: "sudo", command: "sudo " }
-  - { alias: "v", command: "nvim" }
-  - { alias: "aptlist", command: "apt list --upgradable" }
-  - { alias: "i", command: "ip -c -brie a" }
-  - { alias: "sz", command: "du /* -xhs --exclude=/proc  | sort -hr" }
+  - {alias: "sudo", command: "sudo "}
+  - {alias: "v", command: "nvim"}
+  - {alias: "aptlist", command: "apt list --upgradable"}
+  - {alias: "i", command: "ip -c -brie a"}
+  - {alias: "sz", command: "du /* -xhs --exclude=/proc  | sort -hr"}

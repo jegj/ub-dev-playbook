@@ -1,6 +1,6 @@
 ---
 - name: Check if aws cli is already installed
-  command: aws --version
+  ansible.builtin.command: aws --version
   ignore_errors: yes
   register: awscli_version
   changed_when: no

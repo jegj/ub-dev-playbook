@@ -1,6 +1,6 @@
 ---
 - name: Add aliases
-  lineinfile:
+  ansible.builtin.lineinfile:
     dest: "{{ bash_alias_path }}"
     create: yes
     mode: 0644

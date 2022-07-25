@@ -1,10 +1,11 @@
 ---
-- ansible.builtin.command: whoami
+- name: Get user
+  ansible.builtin.command: whoami
   register: whoami
   changed_when: no
 
 - name: define admin user
-  set_fact:
+  ansible.builtin.set_fact:
     admin_user: "{{ whoami.stdout }}"
 
 - name: Add user to sudoers
