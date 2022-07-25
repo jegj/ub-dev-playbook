@@ -1,0 +1,16 @@
+---
+- ansible.builtin.command: whoami
+  register: whoami
+  changed_when: no
+
+- name: define admin user
+  set_fact:
+    admin_user: "{{ whoami.stdout }}"
+
+- name: Add user to sudoers
+  ansible.builtin.template:
+    src: templates/admin.sudoers.j2
+    dest: /etc/sudoers.d/{{ admin_user }}
+    validate: "visudo -cf %s"
+    mode: 0440
+  become_user: root

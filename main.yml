@@ -14,6 +14,10 @@
       tags: ["always"]
 
   tasks:
+    - import_tasks: tasks/admin.yml
+      tags:
+        - admin
+
     - import_tasks: tasks/apt_pkgs.yml
       tags:
         - sw

@@ -65,4 +65,4 @@ Create a config.yml file and setting the overrides in that file. Follow [config.
 - Fix nvm installation
 - Set up /etc/hosts
 - Check vscode sync  or install vscode settings extensions
-- Add account to `sudo` group
+- ~~Add account to `sudo` group and souders~~
