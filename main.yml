@@ -11,10 +11,9 @@
       include_vars: "{{ item }}"
       with_fileglob:
         - "{{ playbook_dir }}/config.yml"
-      tags: ['always']
+      tags: ["always"]
 
   tasks:
-
     - import_tasks: tasks/apt_pkgs.yml
       tags:
         - sw
@@ -35,9 +34,9 @@
         - sw
         - pip
 
-    - import_tasks: tasks/nvm.yml
-      tags:
-        - sw
+    # - import_tasks: tasks/nvm.yml
+    #   tags:
+    #     - sw
 
     - import_tasks: tasks/awscli.yml
       tags:
