@@ -1,5 +1,7 @@
 # ub-dev-playbook
 
+[![CI](https://github.com/jegj/ub-dev-playbook/actions/workflows/ci.yml/badge.svg)](https://github.com/jegj/ub-dev-playbook/actions/workflows/ci.yml)
+
 This playbook installs and configures my Ubuntu Dev Env
 
 ## Installation
