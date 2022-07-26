@@ -31,20 +31,20 @@ Create a config.yml file and setting the overrides in that file. Follow [config.
 
 ## Tags
 
-- `sw`  : All the software ( `apt` + `deb` + `snap` + `pip` + `awscli`)
-- `apt` : APT packages
-- `deb` : Local deb packages
-- `snap` : Snap packages
-- `pip` : Pip dependecies
-- `awscli` : AWS CLI
-- `local` : Local settings
+- `sw`    : All the software ( `apt` + `deb` + `snap` + `pip` + `awscli`)
+- `apt`   : APT packages
+- `deb`   : Local deb packages
+- `snap`  : Snap packages
+- `pip`   : Pip packages
+- `awscli`: AWS CLI
+- `local` : Local settings + git alias + vim/neovim settings
 - `alias` : Add common alias
+- `admin` : Admin task like souders
 
 ## TODO
 
 - ~~Set up nvidia persistance mode to avoid GPU crash  `/usr/bin/nvidia-smi -pm 1` [Deprecated]~~
 - Install https://community.openvpn.net/openvpn/wiki/OpenVPN3Linux
 - Fix nvm installation
-- Set up /etc/hosts
 - Check vscode sync  or install vscode settings extensions
 - ~~Add account to `sudo` group and souders~~
