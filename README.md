@@ -41,6 +41,10 @@ Create a config.yml file and setting the overrides in that file. Follow [config.
 - `alias` : Add common alias
 - `admin` : Admin task like souders
 
+## Inspiration
+
+https://github.com/geerlingguy/mac-dev-playbook
+
 ## TODO
 
 - ~~Set up nvidia persistance mode to avoid GPU crash  `/usr/bin/nvidia-smi -pm 1` [Deprecated]~~
