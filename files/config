@@ -1,0 +1,5 @@
+Host jegj_github
+Hostname github.com
+IdentityFile /home/jegj/.ssh/github/id_github
+User git
+IdentitiesOnly yes

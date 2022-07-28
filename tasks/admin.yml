@@ -15,3 +15,9 @@
     validate: "visudo -cf %s"
     mode: 0440
   become_user: root
+
+- name: Copy ssh config file
+  ansible.builtin.copy:
+    src: files/config
+    dest: ~/.ssh/config
+    mode: 0644
