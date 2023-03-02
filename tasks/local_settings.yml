@@ -42,3 +42,9 @@
     name: alias.last
     scope: global
     value: log -1 HEAD --stat
+
+- name: Add mr alias
+  community.general.git_config:
+    name: alias.mr
+    scope: global
+    value: push -u origin HEAD
