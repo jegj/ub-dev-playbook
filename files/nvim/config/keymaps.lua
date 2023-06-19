@@ -19,4 +19,5 @@ end
 map("n", "<C-d>", "<C-d>zz")
 map("n", "<C-u>", "<C-u>zz")
 map("n", "<leader>sz", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], { desc = "find & replace" }) -- doesnt show the command, use arrow keys
-map("x", "<leader>p", [["_dP]])
+map("x", "<leader>p", [["_dP]], { desc = "smart paste" })
+map("n", "<C-p>", "<cmd>silent !tmux neww tmux-sessionizer<CR>", { desc = "open project" })
