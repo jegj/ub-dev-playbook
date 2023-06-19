@@ -50,7 +50,6 @@ https://github.com/geerlingguy/mac-dev-playbook
 - ~~Set up nvidia persistance mode to avoid GPU crash  `/usr/bin/nvidia-smi -pm 1` [Deprecated]~~
 - Install https://community.openvpn.net/openvpn/wiki/OpenVPN3Linux
 - Fix nvm installation
-- ~~Check vscode sync  or install vscode settings extensions~~
 - ~~Add account to `sudo` group and souders~~
 
 ## Manual Settings
