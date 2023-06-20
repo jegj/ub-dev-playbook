@@ -52,6 +52,7 @@ apt_pkgs:
   - libreoffice
   - smartmontools # https://www.smartmontools.org/
   - fzf # for local scripts
+  - zsh
 
 snap_pkgs:
   - discord
