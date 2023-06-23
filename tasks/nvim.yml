@@ -4,3 +4,4 @@ nvim_apt_pkgs:
   - ripgrep
 npm_global_pks:
   - tree-sitter-cli
+  - neovim
