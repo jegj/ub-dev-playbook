@@ -47,10 +47,7 @@ https://github.com/geerlingguy/mac-dev-playbook
 
 ## TODO
 
-- ~~Set up nvidia persistance mode to avoid GPU crash  `/usr/bin/nvidia-smi -pm 1` [Deprecated]~~
-- Install https://community.openvpn.net/openvpn/wiki/OpenVPN3Linux
 - Fix nvm installation
-- ~~Add account to `sudo` group and souders~~
 
 ## Manual Settings
 - https://www.addictivetips.com/ubuntu-linux-tips/flameshot-default-linux-screenshot-app/#:~:text=Step%203%3A%20Select%20the%20%E2%80%9CTrigger,app%20the%20default%20screenshot%20tool.

@@ -51,8 +51,8 @@ apt_pkgs:
   - jq
   - libreoffice
   - smartmontools # https://www.smartmontools.org/
-  - fzf # for local scripts
-  - zsh
+  - fzf # fuzzy finder for local scripts
+  - zsh # terminal
 
 snap_pkgs:
   - discord
