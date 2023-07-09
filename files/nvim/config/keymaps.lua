@@ -18,10 +18,13 @@ end
 
 map("n", "<C-d>", "<C-d>zz")
 map("n", "<C-u>", "<C-u>zz")
-map("n", "n", "nzzzv")
-map("n", "N", "Nzzzv")
-map("n", "<leader>sz", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], { desc = "find & replace" }) -- doesnt show the command, use arrow keys
+map("n", "<leader>sz", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], { desc = "local find & replace" })
 map("x", "<leader>p", [["_dP]], { desc = "smart paste" })
 map("n", "<C-p>", "<cmd>silent !tmux neww tmux-sessionizer<CR>", { desc = "open project" })
 map("n", "*", "*zz")
 map("n", "#", "#zz")
+map("n", "#", "#zz")
+map("n", "<leader>fcf", ':let @+=expand("%")<CR>', { desc = "copy relative path" })
+map("n", "<leader>fcF", ':let @+=expand("%:p")<CR>', { desc = "copy absolute path" })
+map("n", "<leader>fcn", ':let @+=expand("%:t")<CR>', { desc = "copy filename" })
+map("n", "<leader>fcd", ':let @+=expand("%:p:h")<CR>', { desc = "copy directory name" })
