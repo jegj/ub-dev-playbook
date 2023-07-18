@@ -1,6 +1,9 @@
-# Lazyvim usefule info
+# Lazyvim useful info
 
 ## Installations
+
+### neovim from source
+Go to [neovim release](https://github.com/neovim/neovim/releases/tag/stable) and follow instructions
 
 ### Install Lazygit
 ```sh
