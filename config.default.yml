@@ -13,8 +13,6 @@ apt_key:
 apt_repos:
   - ppa:solaar-unifying/stable
   - ppa:cappelikan/ppa
-  - deb https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/focal pgadmin4 main
-  - deb [arch=amd64] https://apt.releases.hashicorp.com focal main
 
 apt_pkgs:
   - apt-transport-https
@@ -39,7 +37,7 @@ apt_pkgs:
   - tmux
   - nmap
   - iotop
-  - neovim
+  #- neovim   disable just for now
   - thunderbird
   - silversearcher-ag # https://github.com/ggreer/the_silver_searcher (Required for https://github.com/junegunn/fzf.vim)
   - exuberant-ctags # http://ctags.sourceforge.net/  Code navigation for neovim
@@ -53,6 +51,7 @@ apt_pkgs:
   - smartmontools # https://www.smartmontools.org/
   - fzf # fuzzy finder for local scripts
   - zsh # terminal
+  - vagrant
 
 snap_pkgs:
   - discord
@@ -99,11 +98,8 @@ deb_pkgs:
   - name: steam
     url: https://repo.steampowered.com/steam/archive/precise/steam_latest.deb
 
-  - name: vagrant
-    url: https://releases.hashicorp.com/vagrant/{{ vagrant_version }}/vagrant_{{ vagrant_version }}_x86_64.deb
-
   - name: virtualbox
-    url: https://download.virtualbox.org/virtualbox/6.1.30/virtualbox-6.1_6.1.30-148432~Ubuntu~eoan_amd64.deb
+    url: https://download.virtualbox.org/virtualbox/7.0.10/virtualbox-7.0_7.0.10-158379~Ubuntu~jammy_amd64.deb
 
 bash_alias_path: "{{ ansible_env.HOME }}/.bash_aliases"
 
