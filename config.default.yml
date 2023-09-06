@@ -2,7 +2,7 @@
 # https://github.com/nvm-sh/nvm
 nvm_version: 0.39.0
 # Franz https://meetfranz.com/
-franz_version: 5.9.2
+franz_version: 5.10.0
 # Vagrant https://www.vagrantup.com/
 vagrant_version: 2.2.19
 
