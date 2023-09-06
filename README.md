@@ -21,6 +21,11 @@ ansible-playbook main.yml --ask-become-pass --become-user=<ADMIN_ACCOUNT>
 #ansible-playbook main.yml --ask-become-pass --become-user=jegj
 ```
 
+Supports check mode
+```sh
+ansible-playbook main.yml --ask-become-pass --become-user=<ADMIN_ACCOUNT> --check
+```
+
 ## Default values
 
 Check [config.default.yml](./config.default.yml)
