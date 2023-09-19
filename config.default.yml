@@ -53,6 +53,7 @@ apt_pkgs:
   - zsh # terminal
   - vagrant
   - python3.10-venv # package for lazyvim and ansible lint mason package
+  - gparted
 
 snap_pkgs:
   - discord
