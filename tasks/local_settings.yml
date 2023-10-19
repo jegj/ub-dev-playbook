@@ -1,15 +1,15 @@
 ---
 - name: Copy vimrc
   ansible.builtin.copy:
-    src: files/.vimrc
+    src: files/vim/.vimrc
     dest: "{{ ansible_env.HOME }}/.vimrc"
     backup: yes
     mode: '0664'
 
-- name: Copy neovim init vim
+- name: Copy tmux conf
   ansible.builtin.copy:
-    src: files/init.vim
-    dest: "{{ ansible_env.HOME }}/.config/nvim/init.vim"
+    src: files/tmux/.tmux.conf
+    dest: "{{ ansible_env.HOME }}/.tmux.conf"
     backup: yes
     mode: '0664'
 

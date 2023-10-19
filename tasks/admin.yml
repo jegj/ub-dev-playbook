@@ -18,6 +18,6 @@
 
 - name: Copy ssh config file
   ansible.builtin.copy:
-    src: files/config
+    src: files/ssh/config
     dest: ~/.ssh/config
     mode: 0644
