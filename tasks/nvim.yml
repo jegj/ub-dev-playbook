@@ -1,7 +1,0 @@
-nvim_apt_pkgs:
-  - lazygit
-  - fd-find
-  - ripgrep
-npm_global_pks:
-  - tree-sitter-cli
-  - neovim

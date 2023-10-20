@@ -1,5 +1,6 @@
 ---
-- hosts: all
+- name: Ubuntu dev env installation
+  hosts: all
   become: yes
   gather_facts: yes
 
@@ -14,42 +15,50 @@
       tags: ["always"]
 
   tasks:
-    - import_tasks: tasks/admin.yml
+    - name: Import admin
+      ansible.builtin.import_tasks: tasks/admin.yml
       tags:
         - admin
 
-    - import_tasks: tasks/apt_pkgs.yml
+    - name: Import apt packages
+      ansible.builtin.import_tasks: tasks/apt_pkgs.yml
       tags:
         - sw
         - apt
 
-    - import_tasks: tasks/deb_local_pkgs.yml
+    - name: Import local and deb packages
+      ansible.builtin.import_tasks: tasks/deb_local_pkgs.yml
       tags:
         - sw
         - deb
 
-    - import_tasks: tasks/snap_pkgs.yml
+    - name: Import snap packages
+      ansible.builtin.import_tasks: tasks/snap_pkgs.yml
       tags:
         - sw
         - snap
 
-    - import_tasks: tasks/pip_pkgs.yml
+    - name: Import pip packages
+      ansible.builtin.import_tasks: tasks/pip_pkgs.yml
       tags:
         - sw
         - pip
 
-    # - import_tasks: tasks/nvm.yml
+    # - ansible.builtin.import_tasks: tasks/nvm.yml
     #   tags:
     #     - sw
 
-    - import_tasks: tasks/awscli.yml
+    - name: Import awscli
+      ansible.builtin.import_tasks: tasks/awscli.yml
       tags:
         - sw
 
-    - import_tasks: tasks/local_settings.yml
+    - name: Import local settings
+      ansible.builtin.import_tasks: tasks/local_settings.yml
       tags:
         - local
 
-    - import_tasks: tasks/alias.yml
+    - name: Import alias
+      ansible.builtin.import_tasks: tasks/alias.yml
       tags:
         - alias

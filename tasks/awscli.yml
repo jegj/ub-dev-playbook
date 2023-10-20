@@ -3,19 +3,19 @@
   ansible.builtin.command: aws --version
   ignore_errors: yes
   register: awscli_version
-  changed_when: no
+  changed_when: awscli_version.rc != 0
 
-- name: Extract awscli
+- name: Extract awscli in /tmp folder
   ansible.builtin.unarchive:
     src: "{{ awscli_url }}"
     dest: /tmp
     remote_src: yes
-  changed_when: no
 
 - name: Install aws cli ( first time )
   ansible.builtin.command: /tmp/aws/install -i /usr/local/aws-cli -b /usr/local/bin
   become: yes
   when: awscli_version.rc > 0
+  changed_when: awscli_version.rc > 0
   become_user: root
 
 - name: Update aws cli

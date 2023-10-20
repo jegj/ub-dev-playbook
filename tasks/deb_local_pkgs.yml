@@ -6,4 +6,5 @@
   loop: "{{ deb_pkgs }}"
   loop_control:
     label: "{{ item.name }}"
+  become: yes
   become_user: root

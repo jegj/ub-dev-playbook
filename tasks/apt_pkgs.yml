@@ -4,6 +4,7 @@
     url: "{{ item }}"
     state: present
   loop: "{{ apt_key }}"
+  become: yes
   become_user: root
 
 - name: Add additional apt repositories
@@ -12,6 +13,7 @@
     state: present
     update_cache: yes
   loop: "{{ apt_repos }}"
+  become: yes
   become_user: root
 
 - name: Install common apt packages
@@ -19,4 +21,5 @@
     name: "{{ item }}"
     state: present
   loop: "{{ apt_pkgs }}"
+  become: yes
   become_user: root

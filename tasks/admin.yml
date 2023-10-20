@@ -4,7 +4,7 @@
   register: whoami
   changed_when: no
 
-- name: define admin user
+- name: Define admin user
   ansible.builtin.set_fact:
     admin_user: "{{ whoami.stdout }}"
 
@@ -14,6 +14,7 @@
     dest: /etc/sudoers.d/{{ admin_user }}
     validate: "visudo -cf %s"
     mode: 0440
+  become: yes
   become_user: root
 
 - name: Copy ssh config file
