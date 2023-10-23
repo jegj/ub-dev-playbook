@@ -50,11 +50,5 @@ Create a config.yml file and setting the overrides in that file. Follow [config.
 
 https://github.com/geerlingguy/mac-dev-playbook
 
-## TODO
-
-- Fix nvm installation
-- Install and configure nvim/lazy vim with a playbook task
-- Add repo and key in folders to avoid apt key deprecation warning
-
 ## Manual Settings
 - https://www.addictivetips.com/ubuntu-linux-tips/flameshot-default-linux-screenshot-app/#:~:text=Step%203%3A%20Select%20the%20%E2%80%9CTrigger,app%20the%20default%20screenshot%20tool.
