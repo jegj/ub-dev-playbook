@@ -52,6 +52,7 @@
       ansible.builtin.import_tasks: tasks/awscli.yml
       tags:
         - sw
+        - awscli
 
     - name: Import local settings
       ansible.builtin.import_tasks: tasks/local_settings.yml
