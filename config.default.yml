@@ -1,6 +1,6 @@
 ---
 # https://github.com/nvm-sh/nvm
-nvm_version: 0.39.0
+nvm_version: 0.39.5
 # Franz https://meetfranz.com/
 franz_version: 5.10.0
 # Vagrant https://www.vagrantup.com/
@@ -89,6 +89,8 @@ pip_pkgs:
 nvm_url: https://raw.githubusercontent.com/nvm-sh/nvm/v{{ nvm_version }}/install.sh
 
 awscli_url: https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip
+
+zsh_url: https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
 
 deb_pkgs:
   - name: franz

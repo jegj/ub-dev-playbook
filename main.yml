@@ -44,9 +44,11 @@
         - sw
         - pip
 
-    # - ansible.builtin.import_tasks: tasks/nvm.yml
-    #   tags:
-    #     - sw
+    - name: Import nvm
+      ansible.builtin.import_tasks: tasks/nvm.yml
+      tags:
+        - sw
+        - nvm
 
     - name: Import awscli
       ansible.builtin.import_tasks: tasks/awscli.yml

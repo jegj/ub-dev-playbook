@@ -3,11 +3,10 @@
   ansible.builtin.get_url:
     url: "{{ nvm_url }}"
     dest: /tmp/nvm-installer.sh
-    mode: 0644
+    mode: 0744
   changed_when: no
 
 - name: Execute the nvm-installer.sh
   ansible.builtin.command: /tmp/nvm-installer.sh
-  register: test
   args:
     creates: "{{ ansible_env.HOME }}/.nvm/nvm.sh"
