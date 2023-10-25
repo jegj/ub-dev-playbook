@@ -36,7 +36,7 @@ Create a config.yml file and setting the overrides in that file. Follow [config.
 
 ## Tags
 
-- `sw`    : All the software ( `apt` + `deb` + `snap` + `pip` + `awscli`)
+- `sw`    : All the software ( `apt` + `deb` + `snap` + `pip` + `awscli` + `neovim` + `nvm`)
 - `apt`   : APT packages
 - `deb`   : Local deb packages
 - `snap`  : Snap packages
@@ -45,6 +45,8 @@ Create a config.yml file and setting the overrides in that file. Follow [config.
 - `local` : Local settings + git alias + vim/neovim settings
 - `alias` : Add common alias
 - `admin` : Admin task like souders
+- `neovim` : Neovim installation
+- `nvm` : nvm installation
 
 ## Inspiration
 

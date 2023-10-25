@@ -92,6 +92,8 @@ awscli_url: https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip
 
 zsh_url: https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
 
+neovim_url: https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
+
 deb_pkgs:
   - name: franz
     url: https://github.com/meetfranz/franz/releases/download/v{{ franz_version }}/franz_{{ franz_version }}_amd64.deb

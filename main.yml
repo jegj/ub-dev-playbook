@@ -56,6 +56,12 @@
         - sw
         - awscli
 
+    - name: Import neovim
+      ansible.builtin.import_tasks: tasks/neovim.yml
+      tags:
+        - sw
+        - neovim
+
     - name: Import local settings
       ansible.builtin.import_tasks: tasks/local_settings.yml
       tags:
