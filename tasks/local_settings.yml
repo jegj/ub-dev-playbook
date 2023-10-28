@@ -13,38 +13,9 @@
     backup: yes
     mode: '0664'
 
-- name: Add checkout alias
-  community.general.git_config:
-    name: alias.co
-    scope: global
-    value: checkout
-
-- name: Add status alias
-  community.general.git_config:
-    name: alias.st
-    scope: global
-    value: status -sb
-
-- name: Add push alias
-  community.general.git_config:
-    name: alias.p
-    scope: global
-    value: push
-
-- name: Add log alias
-  community.general.git_config:
-    name: alias.lg
-    scope: global
-    value: log --oneline
-
-- name: Add last alias
-  community.general.git_config:
-    name: alias.last
-    scope: global
-    value: log -1 HEAD --stat
-
-- name: Add mr alias
-  community.general.git_config:
-    name: alias.mr
-    scope: global
-    value: push -u origin HEAD
+- name: Copy .gitconfig file
+  ansible.builtin.copy:
+    src: files/git/.gitconfig
+    dest: "{{ ansible_env.HOME }}/.gitconfig"
+    backup: yes
+    mode: '0664'

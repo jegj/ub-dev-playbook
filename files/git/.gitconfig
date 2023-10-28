@@ -1,0 +1,11 @@
+[alias]
+	st = status -sb
+	co = checkout
+	lg = log --oneline
+  last = log -1 HEAD --stat
+  mr = push -u origin HEAD
+  vlast = ! git log -n 1 --pretty=format:"%h" | tail -n 1 | git show
+	p = push
+[user]
+	email = jegj57@gmail.com
+	name = Javier Galarza
