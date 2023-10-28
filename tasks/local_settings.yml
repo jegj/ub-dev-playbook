@@ -19,3 +19,9 @@
     dest: "{{ ansible_env.HOME }}/.gitconfig"
     backup: yes
     mode: '0664'
+
+- name: Copy tmux-sessionnizer
+  ansible.builtin.copy:
+    src: "files/.local/bin/tmux-sessionizer"
+    dest: "{{ ansible_env.HOME }}/.local/bin/tmux-sessionizer"
+    mode: '0755'
