@@ -25,3 +25,9 @@
     src: "files/.local/bin/tmux-sessionizer"
     dest: "{{ ansible_env.HOME }}/.local/bin/tmux-sessionizer"
     mode: '0755'
+
+- name: Copy ssh config file
+  ansible.builtin.copy:
+    src: "files/ssh/config"
+    dest: "{{ ansible_env.HOME }}/.ssh/config"
+    mode: '0664'
