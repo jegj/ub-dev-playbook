@@ -54,3 +54,4 @@ https://github.com/geerlingguy/mac-dev-playbook
 
 ## Manual Settings
 - https://www.addictivetips.com/ubuntu-linux-tips/flameshot-default-linux-screenshot-app/#:~:text=Step%203%3A%20Select%20the%20%E2%80%9CTrigger,app%20the%20default%20screenshot%20tool.
+- [zsh](./files/zsh/README.md)
