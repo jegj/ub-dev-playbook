@@ -3,17 +3,22 @@
 ## Installations
 
 ### neovim from source
-Go to [neovim release](https://github.com/neovim/neovim/releases/tag/stable) and follow instructions
+
+Go to [neovim release](https://github.com/neovim/neovim/releases/tag/stable)
+and follow instructions
 
 ### Install Lazygit
+
 ```sh
 LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | grep -Po '"tag_name": "v\K[^"]*')
 curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/latest/download/lazygit_${LAZYGIT_VERSION}_Linux_x86_64.tar.gz"
 tar xf lazygit.tar.gz lazygit
 sudo install lazygit /usr/local/bin
 ```
-## Links
-- Setup nerdfonts under windows envs : https://webinstall.dev/nerdfont/
-- https://github.com/ThePrimeagen/vim-be-good Game for practice motions
-- https://www.youtube.com/watch?v=7Nt8n3rjfDY
 
+## Links
+
+- [https://webinstall.dev/nerdfont/](Setup nerdfonts under windows envs)
+- [https://github.com/ThePrimeagen/vim-be-good](Game for practice motions)
+- [https://www.youtube.com/watch?v=7Nt8n3rjfDY]
+(run & debug typescript units tests in neovim)
