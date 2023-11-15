@@ -56,6 +56,7 @@ apt_pkgs:
   - lazygit   #  nvim dep
   - fd-find   #  nvim dep
   - ripgrep   #  nvim dep
+  - gnupg     # gpg encryption
 
 npm_glob_pkgs:
   - tree-sitter-cli  # nvim dep
