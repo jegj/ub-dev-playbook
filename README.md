@@ -10,18 +10,17 @@ This playbook installs and configures my Ubuntu Dev Env
 
 2) Clone or download this repo
 
-3) Install dependecies
-```
-ansible-galaxy install -r requirements.yml
-```
+3) Install dependecies ```sh ansible-galaxy install -r requirements.yml```
 
 4) Run playbook
+
 ```sh
 ansible-playbook main.yml --ask-become-pass --become-user=<ADMIN_ACCOUNT>
 #ansible-playbook main.yml --ask-become-pass --become-user=jegj
 ```
 
 Supports check mode
+
 ```sh
 ansible-playbook main.yml --ask-become-pass --become-user=<ADMIN_ACCOUNT> --check
 ```
@@ -32,11 +31,13 @@ Check [config.default.yml](./config.default.yml)
 
 ## Override Default values
 
-Create a config.yml file and setting the overrides in that file. Follow [config.default.yml](./config.default.yml) for more information
+Create a config.yml file and setting the overrides in that file.
+Follow [config.default.yml](./config.default.yml) for more information
 
 ## Tags
 
-- `sw`    : All the software ( `apt` + `deb` + `snap` + `pip` + `awscli` + `neovim` + `nvm`)
+- `sw`    : All the software ( `apt` + `deb` + `snap` +
+`pip` + `awscli` + `neovim` + `nvm`)
 - `apt`   : APT packages
 - `deb`   : Local deb packages
 - `snap`  : Snap packages
@@ -50,8 +51,9 @@ Create a config.yml file and setting the overrides in that file. Follow [config.
 
 ## Inspiration
 
-https://github.com/geerlingguy/mac-dev-playbook
+[mac-dev-playbook](https://github.com/geerlingguy/mac-dev-playbook)
 
 ## Manual Settings
-- https://www.addictivetips.com/ubuntu-linux-tips/flameshot-default-linux-screenshot-app/#:~:text=Step%203%3A%20Select%20the%20%E2%80%9CTrigger,app%20the%20default%20screenshot%20tool.
+
+- [flameshot](https://www.addictivetips.com/ubuntu-linux-tips/flameshot-default-linux-screenshot-app/#:~:text=Step%203%3A%20Select%20the%20%E2%80%9CTrigger,app%20the%20default%20screenshot%20tool.)
 - [zsh](./files/zsh/README.md)
