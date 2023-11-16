@@ -48,6 +48,7 @@ Follow [config.default.yml](./config.default.yml) for more information
 - `admin` : Admin task like souders
 - `neovim` : Neovim installation
 - `nvm` : nvm installation
+- `npm` : npm global packages installation
 
 ## Inspiration
 

@@ -4,6 +4,7 @@ extends: default
 ignore: |
   molecule/
   roles/external/
+  collections/
 
 rules:
   line-length:

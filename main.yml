@@ -56,6 +56,12 @@
         - sw
         - awscli
 
+    - name: Import npm global packages
+      ansible.builtin.import_tasks: tasks/npm.yml
+      tags:
+        - sw
+        - npm
+
     - name: Import neovim
       ansible.builtin.import_tasks: tasks/neovim.yml
       tags:

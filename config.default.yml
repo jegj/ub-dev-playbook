@@ -3,8 +3,6 @@
 nvm_version: 0.39.5
 # Franz https://meetfranz.com/
 franz_version: 5.10.0
-# Vagrant https://www.vagrantup.com/
-vagrant_version: 2.2.19
 
 apt_key:
   - https://www.pgadmin.org/static/packages_pgadmin_org.pub
@@ -49,7 +47,7 @@ apt_pkgs:
   - libreoffice
   - smartmontools  # https://www.smartmontools.org/
   - fzf  # fuzzy finder for local scripts
-  - zsh  # terminal
+  - zsh  # shell
   - vagrant
   - python3.10-venv  # package for lazyvim and ansible lint mason package
   - gparted
@@ -61,6 +59,8 @@ apt_pkgs:
 npm_glob_pkgs:
   - tree-sitter-cli  # nvim dep
   - neovim  # nvim  dep
+  - yarn
+  - protondb-cli
 
 snap_pkgs:
   - discord
@@ -71,7 +71,6 @@ snap_pkgs:
   - teams
   - telegram-desktop
   - cacher  # https://www.cacher.io/
-  - remmina  # https://remmina.org/
   - dbeaver-ce  # https://dbeaver.io/
 
 pip_pkgs:
