@@ -10,7 +10,7 @@ This playbook installs and configures my Ubuntu Dev Env
 
 2) Clone or download this repo
 
-3) Install dependecies ```sh ansible-galaxy install -r requirements.yml```
+3) Install dependecies ``` ansible-galaxy install -r requirements.yml```
 
 4) Run playbook
 
