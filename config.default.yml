@@ -23,7 +23,6 @@ apt_pkgs:
   - git
   - gimp
   - vim
-  - flameshot    # https://github.com/flameshot-org/flameshot
   - shellcheck   # https://github.com/koalaman/shellcheck
   - htop
   - solaar       # https://pwr-solaar.github.io/Solaar/
