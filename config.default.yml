@@ -7,10 +7,12 @@ franz_version: 5.10.0
 apt_key:
   - https://www.pgadmin.org/static/packages_pgadmin_org.pub
   - https://apt.releases.hashicorp.com/gpg
+  - https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
 
 apt_repos:
   - ppa:solaar-unifying/stable
   - ppa:cappelikan/ppa
+  - deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main
 
 apt_pkgs:
   - apt-transport-https
@@ -54,6 +56,7 @@ apt_pkgs:
   - fd-find   #  nvim dep
   - ripgrep   #  nvim dep
   - gnupg     # gpg encryption
+  - brave-browser
 
 npm_glob_pkgs:
   - tree-sitter-cli  # nvim dep
