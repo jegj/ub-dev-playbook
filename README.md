@@ -16,7 +16,6 @@ This playbook installs and configures my Ubuntu Dev Env
 
 ```sh
 ansible-playbook main.yml --ask-become-pass --become-user=<ADMIN_ACCOUNT>
-#ansible-playbook main.yml --ask-become-pass --become-user=jegj
 ```
 
 Supports check mode
@@ -44,7 +43,7 @@ Follow [config.default.yml](./config.default.yml) for more information
 - `pip`   : Pip packages
 - `awscli`: AWS CLI
 - `local` : Local settings + git alias + vim/neovim settings
-- `alias` : Add common alias
+- `alias` : Add shell alias
 - `admin` : Admin task like souders
 - `neovim` : Neovim installation
 - `nvm` : nvm installation
@@ -57,5 +56,7 @@ Follow [config.default.yml](./config.default.yml) for more information
 ## Manual Settings
 
 - [zsh](./files/zsh/README.md)
+
+- [neovim](/files/nvim/README.md)
 
 - [rust](https://www.rust-lang.org/tools/install)
