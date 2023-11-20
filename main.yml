@@ -44,6 +44,12 @@
         - sw
         - pip
 
+    - name: Import zsh
+      ansible.builtin.import_tasks: tasks/zsh.yml
+      tags:
+        - sw
+        - zsh
+
     - name: Import nvm
       ansible.builtin.import_tasks: tasks/nvm.yml
       tags:

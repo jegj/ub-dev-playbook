@@ -48,6 +48,7 @@ Follow [config.default.yml](./config.default.yml) for more information
 - `neovim` : Neovim installation
 - `nvm` : nvm installation
 - `npm` : npm global packages installation
+- `zsh`: zsh shell installation & configuration
 
 ## Inspiration
 

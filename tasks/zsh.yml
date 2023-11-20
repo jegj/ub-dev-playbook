@@ -1,0 +1,15 @@
+---
+- name: Run zsh installer
+  ansible.builtin.shell: sh -c "$(curl -fsSL {{ zsh_url }})"
+  register: zsh_installer
+  ignore_errors: yes
+  changed_when: >-
+    'folder already exists' not in zsh_installer.stdout
+
+
+- name: Copy .zshrc file
+  ansible.builtin.copy:
+    src: files/zsh/.zshrc
+    dest: "{{ ansible_env.HOME }}/.zshrc"
+    backup: yes
+    mode: '0644'

@@ -70,7 +70,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git z zsh-syntax-highlighting nvm copypath copyfile)
+plugins=(git z zsh-syntax-highlighting nvm copypath copyfile node)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -85,9 +85,9 @@ zstyle ':omz:plugins:nvm' autoload yes
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
-   export EDITOR='vim'
+  export EDITOR='vim'
 else
-   export EDITOR='nvim'
+  export EDITOR='mvim'
 fi
 
 # Compilation flags
@@ -101,3 +101,7 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
