@@ -76,6 +76,10 @@ source $ZSH/oh-my-zsh.sh
 
 zstyle ':omz:plugins:nvm' autoload yes
 
+if [[ -f $HOME/.bash_aliases ]]; then
+  source $HOME/.bash_aliases
+fi
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
