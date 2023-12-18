@@ -61,3 +61,9 @@ Follow [config.default.yml](./config.default.yml) for more information
 - [neovim](/files/nvim/README.md)
 
 - [rust](https://www.rust-lang.org/tools/install)
+
+## Lint
+
+```sh
+./lint.sh
+```

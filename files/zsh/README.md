@@ -2,6 +2,5 @@
 
 ## Useful links
 
-- https://ohmyz.sh/ 
-- https://github.com/zsh-users/zsh-syntax-highlighting
-
+- [ohmyz](https://ohmyz.sh/)
+- [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
