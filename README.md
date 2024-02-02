@@ -53,6 +53,7 @@ Follow [config.default.yml](./config.default.yml) for more information
 ## Inspiration
 
 [mac-dev-playbook](https://github.com/geerlingguy/mac-dev-playbook)
+[craftzdog](https://github.com/craftzdog/dotfiles-public/)
 
 ## Manual Settings
 
