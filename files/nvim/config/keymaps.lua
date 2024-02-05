@@ -16,6 +16,15 @@ local function map(mode, lhs, rhs, opts)
 	end
 end
 
+-- select all
+map("n", "<C-a>", "gg<S-v>G", { desc = "select all" })
+-- Do things without affecting the registers
+map("n", "x", '"_x')
+map("n", "<Leader>d", '"_d')
+map("v", "<Leader>d", '"_d')
+map("n", "<Leader>D", '"_D')
+map("v", "<Leader>D", '"_D')
+-- focus
 map("n", "<C-d>", "<C-d>zz")
 map("n", "<C-u>", "<C-u>zz")
 map("n", "<leader>sz", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], { desc = "local find & replace" })
@@ -23,6 +32,8 @@ map("x", "<leader>p", [["_dP]], { desc = "smart paste" })
 map("n", "<C-p>", "<cmd>silent !tmux neww tmux-sessionizer<CR>", { desc = "open project" })
 map("n", "*", "*zz")
 map("n", "#", "#zz")
+map("n", "#", "#zz")
+-- copy files metadata
 map("n", "<leader>fcf", ':let @+=expand("%")<CR>', { desc = "copy relative path" })
 map("n", "<leader>fcF", ':let @+=expand("%:p")<CR>', { desc = "copy absolute path" })
 map("n", "<leader>fcn", ':let @+=expand("%:t")<CR>', { desc = "copy filename" })
