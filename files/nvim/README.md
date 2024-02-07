@@ -18,7 +18,7 @@ sudo install lazygit /usr/local/bin
 
 ## Links
 
-- [https://webinstall.dev/nerdfont/](Setup nerdfonts under windows envs)
-- [https://github.com/ThePrimeagen/vim-be-good](Game for practice motions)
-- [https://www.youtube.com/watch?v=7Nt8n3rjfDY]
-(run & debug typescript units tests in neovim)
+- [Setup nerdfonts under windows envs](https://webinstall.dev/nerdfont/)
+- [Game for practice motions](https://github.com/ThePrimeagen/vim-be-good)
+- [run & debug typescript units tests in neovim](https://www.youtube.com/watch?v=7Nt8n3rjfDY)
+- [craftzdog dot envs](https://github.com/craftzdog/dotfiles-public)
