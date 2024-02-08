@@ -22,3 +22,7 @@ sudo install lazygit /usr/local/bin
 - [Game for practice motions](https://github.com/ThePrimeagen/vim-be-good)
 - [run & debug typescript units tests in neovim](https://www.youtube.com/watch?v=7Nt8n3rjfDY)
 - [craftzdog dot envs](https://github.com/craftzdog/dotfiles-public)
+
+## Old config
+
+- [old vim config](../deprecated/init.vim)
