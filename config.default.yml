@@ -8,11 +8,13 @@ apt_key:
   - https://www.pgadmin.org/static/packages_pgadmin_org.pub
   - https://apt.releases.hashicorp.com/gpg
   - https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+  - https://apt.fury.io/wez/gpg.key
 
 apt_repos:
   - ppa:solaar-unifying/stable
   - ppa:cappelikan/ppa
   - deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main
+  - deb [signed-by=/usr/share/keyrings/wezterm-fury.gpg] https://apt.fury.io/wez/ * *
 
 apt_pkgs:
   - apt-transport-https
@@ -57,6 +59,7 @@ apt_pkgs:
   - ripgrep   #  nvim dep
   - gnupg     # gpg encryption
   - brave-browser
+  - wezterm   # https://wezfurlong.org/wezterm/
 
 npm_glob_pkgs:
   - tree-sitter-cli  # nvim dep
