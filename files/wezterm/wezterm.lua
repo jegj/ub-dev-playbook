@@ -2,6 +2,7 @@ local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 
 config.color_scheme = "Apple Classic"
+config.font_size = 13.3
 
 --[[ 
 For windows WSL
