@@ -63,6 +63,8 @@ Follow [config.default.yml](./config.default.yml) for more information
 
 - [rust](https://www.rust-lang.org/tools/install)
 
+- [go](https://go.dev/doc/install)
+
 ## Lint
 
 ```sh
