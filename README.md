@@ -65,6 +65,8 @@ Follow [config.default.yml](./config.default.yml) for more information
 
 - [go](https://go.dev/doc/install)
 
+- [wezterm](/files/wezterm/wezterm.md)
+
 ## Lint
 
 ```sh
