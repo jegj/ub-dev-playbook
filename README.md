@@ -67,6 +67,8 @@ Follow [config.default.yml](./config.default.yml) for more information
 
 - [wezterm](/files/wezterm/wezterm.md)
 
+- [httpie](/files/httpie/README.md)
+
 ## Lint
 
 ```sh
