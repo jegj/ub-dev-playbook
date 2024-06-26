@@ -18,24 +18,24 @@ sudo install lazygit /usr/local/bin
 
 ### Mason
 
- ◍ ansible-lint
- ◍ eslint-lsp eslint
- ◍ prettierd
- ◍ gopls
- ◍ markdownlint
- ◍ rust-analyzer rust_analyzer
- ◍ lua-language-server lua_ls
- ◍ goimports
- ◍ json-lsp jsonls
- ◍ ansible-language-server ansiblels
- ◍ js-debug-adapter
- ◍ codelldb
- ◍ gofumpt
- ◍ marksman
- ◍ shfmt
- ◍ stylua
- ◍ taplo
- ◍ typescript-language-server tsserver
+- ansible-lint
+- eslint-lsp
+- prettierd
+- gopls
+- markdownlint
+- rust-analyzer
+- lua-language-server
+- goimports
+- json-lsp jsonls
+- ansible-language-server
+- js-debug-adapter
+- codelldb
+- gofumpt
+- marksman
+- shfmt
+- stylua
+- taplo
+- typescript-language-server
 
 ## Links
 
