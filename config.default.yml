@@ -60,6 +60,7 @@ apt_pkgs:
   - gnupg     # gpg encryption
   - brave-browser
   - wezterm   # https://wezfurlong.org/wezterm/
+  - luarocks  # nvim setup and plugins
 
 npm_glob_pkgs:
   - tree-sitter-cli  # nvim dep
