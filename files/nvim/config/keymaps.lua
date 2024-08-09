@@ -38,3 +38,5 @@ map("n", "<leader>fcf", ':let @+=expand("%")<CR>', { desc = "copy relative path"
 map("n", "<leader>fcF", ':let @+=expand("%:p")<CR>', { desc = "copy absolute path" })
 map("n", "<leader>fcn", ':let @+=expand("%:t")<CR>', { desc = "copy filename" })
 map("n", "<leader>fcd", ':let @+=expand("%:p:h")<CR>', { desc = "copy directory name" })
+-- replace under cursor
+map("n", "<leader>j", "*``cgn", { desc = "replace under cursor" })
