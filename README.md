@@ -69,6 +69,8 @@ Follow [config.default.yml](./config.default.yml) for more information
 
 - [httpie](/files/httpie/README.md)
 
+- [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm)
+
 ## Lint
 
 ```sh
