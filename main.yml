@@ -83,3 +83,9 @@
       ansible.builtin.import_tasks: tasks/alias.yml
       tags:
         - alias
+
+    - name: Import tpm
+      ansible.builtin.import_tasks: tasks/tpm.yml
+      tags:
+        - sw
+        - tpm
