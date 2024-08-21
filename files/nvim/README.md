@@ -44,6 +44,7 @@ sudo install lazygit /usr/local/bin
 - [run & debug typescript units tests in neovim](https://www.youtube.com/watch?v=7Nt8n3rjfDY)
 - [craftzdog dot envs](https://github.com/craftzdog/dotfiles-public)
 - [How to survive without multiple cursors in vim](https://vonheikemen.github.io/devlog/tools/how-to-survive-without-multiple-cursors-in-vim/)
+- [Vim motions & tricks](https://www.youtube.com/watch?v=RdyfT2dbt78)
 
 ## Old config
 
