@@ -35,8 +35,7 @@ Follow [config.default.yml](./config.default.yml) for more information
 
 ## Tags
 
-- `sw`    : All the software ( `apt` + `deb` + `snap` +
-`pip` + `awscli` + `neovim` + `nvm`)
+- `sw`    : All the software below
 - `apt`   : APT packages
 - `deb`   : Local deb packages
 - `snap`  : Snap packages
@@ -49,6 +48,7 @@ Follow [config.default.yml](./config.default.yml) for more information
 - `nvm` : nvm installation
 - `npm` : npm global packages installation
 - `zsh`: zsh shell installation & configuration
+- `tpm`: Tmux plugin manager installation
 
 ## Inspiration
 
@@ -68,8 +68,6 @@ Follow [config.default.yml](./config.default.yml) for more information
 - [wezterm](/files/wezterm/wezterm.md)
 
 - [httpie](/files/httpie/README.md)
-
-- [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm)
 
 ## Lint
 
