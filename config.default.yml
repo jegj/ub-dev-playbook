@@ -61,6 +61,7 @@ apt_pkgs:
   - brave-browser
   - wezterm   # https://wezfurlong.org/wezterm/
   - luarocks  # nvim setup and plugins
+  - lm-sensors # tmux gpu/cpu temperature
 
 npm_glob_pkgs:
   - tree-sitter-cli  # nvim dep
