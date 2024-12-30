@@ -4,6 +4,15 @@
 
 This playbook installs and configures my Ubuntu Dev Env
 
+## Dev dependecies
+
+```sh
+sudo apt-get install yamllint
+pip3 install ansible-lint
+```
+
+- [Issues wide dependecies](https://stackoverflow.com/questions/75608323/how-do-i-solve-error-externally-managed-environment-every-time-i-use-pip-3)
+
 ## Installation
 
 1) [Install Ansible](https://docs.ansible.com/ansible/latest/installation_guide/index.html)
