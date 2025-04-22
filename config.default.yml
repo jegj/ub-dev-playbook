@@ -121,6 +121,9 @@ deb_pkgs:
   - name: virtualbox
     url: https://download.virtualbox.org/virtualbox/7.0.10/virtualbox-7.0_7.0.10-158379~Ubuntu~jammy_amd64.deb
 
+  - name: freetube
+    url: https://github.com/FreeTubeApp/FreeTube/releases/download/v0.23.3-beta/freetube_0.23.3_amd64.deb
+
 bash_alias_path: "{{ ansible_env.HOME }}/.bash_aliases"
 
 bash_aliases:
