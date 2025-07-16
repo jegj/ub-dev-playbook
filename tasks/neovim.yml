@@ -15,7 +15,7 @@
   ansible.builtin.file:
     path: "{{ ansible_env.HOME }}/nvim-linux64"
     state: directory
-    mode: '0755'
+    mode: "0755"
 
 - name: Extract neovim in /home folder
   ansible.builtin.unarchive:
@@ -23,7 +23,7 @@
     dest: "{{ ansible_env.HOME }}/nvim-linux64"
     remote_src: yes
     extra_opts: [--strip-components=1]
-    creates: "{{ ansible_env.HOME }}/nvim-linux64/bin/nvim"
+    # creates: "{{ ansible_env.HOME }}/nvim-linux64/bin/nvim" TODO: check
 
 - name: Ensure Neovim symlink is correct
   ansible.builtin.file:
