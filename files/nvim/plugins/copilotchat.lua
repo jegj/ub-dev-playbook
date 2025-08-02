@@ -1,3 +1,15 @@
+local prompts = {
+	-- Code related prompts
+	BetterNamings = "Please provide better names for the following variables and functions.",
+	SwaggerApiDocs = "Please provide documentation for the following API using Swagger.",
+	SwaggerJsDocs = "Please write JSDoc for the following API using Swagger.",
+	-- Text related prompts
+	Summarize = "Please summarize the following text.",
+	Spelling = "Please correct any grammar and spelling errors in the following text.",
+	Wording = "Please improve the grammar and wording of the following text.",
+	Concise = "Please rewrite the following text to make it more concise.",
+}
+
 return {
 	"CopilotC-Nvim/CopilotChat.nvim",
 	dependencies = {
@@ -7,7 +19,7 @@ return {
 	build = "make tiktoken",
 	opts = {
 		model = "claude-3.7-sonnet",
-		prompts = {
+		prompts = vim.tbl_extend("force", prompts, {
 			Rename = {
 				prompt = "Please rename the variable correctly in given selection based on context.",
 				selection = function(source)
@@ -15,7 +27,7 @@ return {
 					return select.visual(source)
 				end,
 			},
-		},
+		}),
 	},
 	keys = {
 		{ "<leader>ae", ":CopilotChatExplain<CR>", mode = "v", desc = "Explain Code" },
@@ -26,5 +38,6 @@ return {
 		{ "<leader>at", ":CopilotChatTests<CR>", mode = "v", desc = "Generate Tests" },
 		{ "<leader>ac", ":CopilotChatCommit<CR>", mode = "v", desc = "Generate Commit Message" },
 		{ "<leader>am", ":CopilotChatModels<CR>", mode = "n", desc = "Change Model" },
+		{ "<leader>ap", ":CopilotChatPrompts<CR>", mode = "v", desc = "Change Prompt" },
 	},
 }
