@@ -40,3 +40,12 @@ map("n", "<leader>fcn", ':let @+=expand("%:t")<CR>', { desc = "copy filename" })
 map("n", "<leader>fcd", ':let @+=expand("%:p:h")<CR>', { desc = "copy directory name" })
 -- replace under cursor
 map("n", "<leader>j", "*``cgn", { desc = "replace under cursor. Use '.' to repeat last command" })
+-- Easier access to beginning and end of lines
+map("n", "<A-h>", "^", {
+	desc = "Go to start of line",
+	silent = true,
+})
+map("n", "<A-l>", "$", {
+	desc = "Go to end of line",
+	silent = true,
+})
