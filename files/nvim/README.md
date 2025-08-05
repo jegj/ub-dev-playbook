@@ -16,27 +16,6 @@ tar xf lazygit.tar.gz lazygit
 sudo install lazygit /usr/local/bin
 ```
 
-### Mason
-
-- ansible-lint
-- eslint-lsp
-- prettierd
-- gopls
-- markdownlint
-- rust-analyzer
-- lua-language-server
-- goimports
-- json-lsp jsonls
-- ansible-language-server
-- js-debug-adapter
-- codelldb
-- gofumpt
-- marksman
-- shfmt
-- stylua
-- taplo
-- typescript-language-server
-
 ## Links
 
 - [Setup nerdfonts under windows envs](https://webinstall.dev/nerdfont/)

@@ -1,0 +1,32 @@
+return {
+	{
+		"williamboman/mason.nvim",
+		opts = {
+			ensure_installed = {
+				"ansible-language-server",
+				"ansible-lint",
+				"codelldb",
+				"eslint-lsp",
+				"gofumpt",
+				"goimports",
+				"golangci-lint",
+				"golangci-lint-langserver",
+				"gopls",
+				"js-debug-adapter",
+				"json-lsp",
+				"lua-language-server",
+				"markdown-toc",
+				"markdownlint",
+				"markdownlint-cli2",
+				"marksman",
+				"prettier",
+				"prettierd",
+				"rust-analyzer",
+				"shfmt",
+				"stylua",
+				"taplo",
+				"vtsls",
+			},
+		},
+	},
+}
