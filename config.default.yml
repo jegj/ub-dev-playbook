@@ -63,6 +63,7 @@ apt_pkgs:
   - luarocks  # nvim setup and plugins
   - lm-sensors  # tmux gpu/cpu temperature
   - yamllint
+  - eza
 
 npm_glob_pkgs:
   - tree-sitter-cli  # nvim dep
