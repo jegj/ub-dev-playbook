@@ -26,6 +26,7 @@ return {
 				"stylua",
 				"taplo",
 				"vtsls",
+				"yamllint",
 			},
 		},
 	},
