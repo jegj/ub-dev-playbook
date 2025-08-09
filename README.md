@@ -61,9 +61,9 @@ Follow [config.default.yml](./config.default.yml) for more information
 
 ## Inspiration
 
-[mac-dev-playbook](https://github.com/geerlingguy/mac-dev-playbook)
-[craftzdog](https://github.com/craftzdog/dotfiles-public/)
-[Lazyvim Ide Configuration](https://github.com/jellydn/lazy-nvim-ide)
+- [mac-dev-playbook](https://github.com/geerlingguy/mac-dev-playbook)
+- [craftzdog](https://github.com/craftzdog/dotfiles-public/)
+- [Lazyvim Ide Configuration](https://github.com/jellydn/lazy-nvim-ide)
 
 ## Manual Settings
 
