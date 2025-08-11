@@ -64,6 +64,7 @@ apt_pkgs:
   - lm-sensors  # tmux gpu/cpu temperature
   - yamllint
   - eza
+  - bat
 
 npm_glob_pkgs:
   - tree-sitter-cli  # nvim dep
@@ -134,3 +135,5 @@ bash_aliases:
   - {alias: "i", command: "ip -c -brie a"}
   - {alias: "sz", command: "du /* -xhs --exclude=/proc  | sort -hr"}
   - {alias: "geffort", command: "git log --pretty=format: --since=\\\"1 year ago\\\" --name-only | sort | uniq -c | sort -rg | head -10"}
+  - {alias: "ls", command: "eza --icons=always"}
+  - {alias: "cat", command: "batcat"}
