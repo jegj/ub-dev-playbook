@@ -64,6 +64,7 @@ Follow [config.default.yml](./config.default.yml) for more information
 - [mac-dev-playbook](https://github.com/geerlingguy/mac-dev-playbook)
 - [craftzdog](https://github.com/craftzdog/dotfiles-public/)
 - [Lazyvim Ide Configuration](https://github.com/jellydn/lazy-nvim-ide)
+- [Wezterm](https://www.josean.com/posts/how-to-setup-wezterm-terminal)
 
 ## Manual Settings
 
