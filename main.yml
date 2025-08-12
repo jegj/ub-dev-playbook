@@ -89,3 +89,9 @@
       tags:
         - sw
         - tpm
+
+    - name: Git clone repos
+      ansible.builtin.import_tasks: tasks/git_clone_repo.yml
+      tags:
+        - sw
+        - git_clone_repo

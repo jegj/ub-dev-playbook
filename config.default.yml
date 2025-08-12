@@ -55,7 +55,7 @@ apt_pkgs:
   - python3.10-venv  # package for lazyvim and ansible lint mason package
   - gparted
   - lazygit   #  nvim dep
-  - fd-find   #  nvim dep
+  - fd-find   #  fdfind command. It is a nvim dep
   - ripgrep   #  nvim dep
   - gnupg     # gpg encryption
   - brave-browser
@@ -95,6 +95,10 @@ pip_pkgs:
   - molecule-docker
   - setuptools
   - awslogs
+
+git_repos:
+  - name: fzf-git.sh  # fzf keybindings for git
+    url: https://github.com/junegunn/fzf-git.sh
 
 nvm_url: https://raw.githubusercontent.com/nvm-sh/nvm/v{{ nvm_version }}/install.sh
 
