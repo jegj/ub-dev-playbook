@@ -4,30 +4,36 @@
     src: files/vim/.vimrc
     dest: "{{ ansible_env.HOME }}/.vimrc"
     backup: yes
-    mode: '0664'
+    mode: "0664"
 
 - name: Copy tmux conf
   ansible.builtin.copy:
     src: files/tmux/.tmux.conf
     dest: "{{ ansible_env.HOME }}/.tmux.conf"
     backup: yes
-    mode: '0664'
+    mode: "0664"
 
 - name: Copy .gitconfig file
   ansible.builtin.copy:
     src: files/git/.gitconfig
     dest: "{{ ansible_env.HOME }}/.gitconfig"
     backup: yes
-    mode: '0664'
+    mode: "0664"
 
 - name: Copy tmux-sessionnizer
   ansible.builtin.copy:
     src: "files/.local/bin/tmux-sessionizer"
     dest: "{{ ansible_env.HOME }}/.local/bin/tmux-sessionizer"
-    mode: '0755'
+    mode: "0755"
+
+- name: Copy better-branch script
+  ansible.builtin.copy:
+    src: "files/.local/bin/better-branch.sh"
+    dest: "{{ ansible_env.HOME }}/.local/bin/better-branch"
+    mode: "0755"
 
 - name: Copy ssh config file
   ansible.builtin.copy:
     src: "files/ssh/config"
     dest: "{{ ansible_env.HOME }}/.ssh/config"
-    mode: '0664'
+    mode: "0664"
