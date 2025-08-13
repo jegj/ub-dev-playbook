@@ -9,6 +9,7 @@ config.cursor_blink_rate = 700
 config.window_background_opacity = 0.95
 config.window_decorations = "TITLE | RESIZE"
 config.enable_tab_bar = false
+config.warn_about_missing_glyphs = false
 
 --[[ 
 For windows WSL
