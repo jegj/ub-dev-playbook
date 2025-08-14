@@ -134,3 +134,25 @@ fi
 # completion using arrow keys (based on history)
 bindkey '^[[A' history-search-backward
 bindkey '^[[B' history-search-forward
+
+# Use fd instead of find for fz
+export FZF_DEFAULT_COMMAND='fdfind --hidden --strip-cwd-prefix --exclude .git --exclude node_modules'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_ALT_C_COMMAND="fdfind --type d --hidden --strip-cwd-prefix --exclude .git --exclude node_modules"
+
+#User fd for keybinding on fzf
+
+# suggestion for files and directories
+_fzf_compgen_path() {
+  fdfind --hidden --exclude .git --exclude node_modules . "$1"
+}
+
+# ** keybinding
+_fzf_compgen_dir() {
+  fdfind --type d --hidden --exclude .git --exclude node_modules . "$1"
+}
+
+# Commented because fzf in my distribution can't be upgraded anymore
+# See  https://github.com/junegunn/fzf-git.sh/issues/79
+#source ~/fzf-git.sh/fzf-git.sh
+
