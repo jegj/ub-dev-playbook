@@ -13,16 +13,6 @@ return {
 	{ "folke/snacks.nvim", opts = { dashboard = { enabled = false } } },
 
 	{
-		"echasnovski/mini.animate",
-		event = "VeryLazy",
-		opts = function(_, opts)
-			opts.scroll = {
-				enable = false,
-			}
-		end,
-	},
-
-	{
 		"nvimdev/dashboard-nvim",
 		event = "VimEnter",
 		opts = function(_, opts)
