@@ -65,6 +65,7 @@ apt_pkgs:
   - yamllint
   - eza
   - bat
+  - nvtop  #htop for gpu
 
 npm_glob_pkgs:
   - tree-sitter-cli  # nvim dep
