@@ -140,7 +140,9 @@ export FZF_DEFAULT_COMMAND='fdfind --hidden --strip-cwd-prefix --exclude .git --
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_ALT_C_COMMAND="fdfind --type d --hidden --strip-cwd-prefix --exclude .git --exclude node_modules"
 
-#User fd for keybinding on fzf
+# Setup fzf previews
+export FZF_CTRL_T_OPTS="--preview 'batcat --color=always -n --line-range :500 {}'"
+export FZF_ALT_C_OPTS="--preview 'eza --icons=always --tree --color=always {} | head -200'"
 
 # suggestion for files and directories
 _fzf_compgen_path() {

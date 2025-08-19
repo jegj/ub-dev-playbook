@@ -8,3 +8,5 @@
 - [config history](https://martinheinz.dev/blog/110)
 - [tricks](https://itnext.io/the-zsh-shell-tricks-i-wish-id-known-earlier-ae99e91c53c2)
 - [Video with nice config](https://www.youtube.com/watch?v=mmqDYw9C30I)
+- [Sin-cy dotfiles](https://github.com/Sin-cy/dotfiles)
+- [craftzdog](https://github.com/craftzdog/dotfiles-public/)
