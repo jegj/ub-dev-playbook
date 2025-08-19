@@ -65,7 +65,7 @@ apt_pkgs:
   - yamllint
   - eza
   - bat
-  - nvtop  #htop for gpu
+  - nvtop  # htop for gpu
 
 npm_glob_pkgs:
   - tree-sitter-cli  # nvim dep
@@ -140,5 +140,5 @@ bash_aliases:
   - {alias: "i", command: "ip -c -brie a"}
   - {alias: "sz", command: "du /* -xhs --exclude=/proc  | sort -hr"}
   - {alias: "geffort", command: "git log --pretty=format: --since=\\\"1 year ago\\\" --name-only | sort | uniq -c | sort -rg | head -10"}
-  - {alias: "ls", command: "eza --icons=always"}
+  - {alias: "ls", command: "eza --long --icons=always --color=always"}
   - {alias: "cat", command: "batcat"}
