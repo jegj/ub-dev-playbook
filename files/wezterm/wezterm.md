@@ -16,3 +16,7 @@ Config file goes at:
 - CTRL+SHIFT+ALT LeftArrow AdjustPaneSize={"Left", 1}
 - CTRL+SHIFT+ALT RightArrow AdjustPaneSize={"Right", 0}
 - CTRL+SHIFT Space QuickSelect
+
+## Useful Links
+
+- [Wezterm](https://www.josean.com/posts/how-to-setup-wezterm-terminal)
