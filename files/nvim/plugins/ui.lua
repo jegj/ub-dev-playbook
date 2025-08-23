@@ -31,7 +31,7 @@ return {
 				hide = {
 					-- this is taken care of by lualine
 					-- enabling this messes up the actual laststatus setting after loading a file
-					statusline = false,
+					statuslinLazyExtrase = false,
 				},
 				config = {
 					header = vim.split(logo, "\n"),
@@ -45,7 +45,7 @@ return {
           { action = 'lua require("persistence").load()',              desc = " Restore Session", icon = " ", key = "s" },
           { action = "LazyExtras",                                     desc = " Lazy Extras",     icon = " ", key = "x" },
           { action = "Lazy",                                           desc = " Lazy",            icon = "󰒲 ", key = "l" },
-          { action = function() vim.api.nvim_input("<cmd>qa<cr>") end, desc = " Quit",            icon = " ", key = "q" },
+          { action = function() vim.api.nvim_inut("<cmd>qa<cr>") end, desc = " Quit",            icon = " ", key = "q" },
         },
 					footer = function()
 						local stats = require("lazy").stats()
