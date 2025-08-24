@@ -19,7 +19,7 @@ pip3 install ansible-lint
 
 2. Clone or download this repo
 
-3. Install dependecies `ansible-galaxy install -r requirements.yml`
+3. Install dependencies `ansible-galaxy install -r requirements.yml`
 
 4. Run playbook
 
@@ -52,19 +52,17 @@ Follow [config.default.yml](./config.default.yml) for more information
 - `awscli`: AWS CLI
 - `local` : Local settings + git alias + vim/neovim settings
 - `alias` : Add shell alias
-- `admin` : Admin task like souders
+- `admin` : Admin task like sudoers
 - `neovim` : Neovim installation
 - `nvm` : nvm installation
 - `npm` : npm global packages installation
 - `zsh`: zsh shell installation & configuration
 - `tpm`: Tmux plugin manager installation
+- `git_clone_repo`: Clone repositories
 
 ## Inspiration
 
 - [mac-dev-playbook](https://github.com/geerlingguy/mac-dev-playbook)
-- [craftzdog](https://github.com/craftzdog/dotfiles-public/)
-- [Lazyvim Ide Configuration](https://github.com/jellydn/lazy-nvim-ide)
-- [Wezterm](https://www.josean.com/posts/how-to-setup-wezterm-terminal)
 
 ## Manual Settings
 

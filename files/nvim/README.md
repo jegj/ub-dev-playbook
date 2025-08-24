@@ -24,6 +24,7 @@ sudo install lazygit /usr/local/bin
 - [craftzdog dot envs](https://github.com/craftzdog/dotfiles-public)
 - [How to survive without multiple cursors in vim](https://vonheikemen.github.io/devlog/tools/how-to-survive-without-multiple-cursors-in-vim/)
 - [Vim motions & tricks](https://www.youtube.com/watch?v=RdyfT2dbt78)
+- [Lazyvim Ide Configuration](https://github.com/jellydn/lazy-nvim-ide)
 
 ## Old config
 
