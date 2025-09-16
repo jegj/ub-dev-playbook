@@ -49,7 +49,7 @@ apt_pkgs:
   - jq
   - libreoffice
   - smartmontools  # https://www.smartmontools.org/
-  - fzf  # fuzzy finder for local scripts
+  - fzf  # fuzzy finder for local scripts FIXME: Use binary instead
   - zsh  # shell
   - vagrant
   - python3.10-venv  # package for lazyvim and ansible lint mason package
