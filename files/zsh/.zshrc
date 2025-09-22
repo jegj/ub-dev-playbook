@@ -152,7 +152,5 @@ _fzf_compgen_dir() {
   fdfind --type d --hidden --exclude .git --exclude node_modules . "$1"
 }
 
-# Commented because fzf in my distribution can't be upgraded anymore
-# See  https://github.com/junegunn/fzf-git.sh/issues/79
-#source ~/fzf-git.sh/fzf-git.sh
+source ~/fzf-git.sh/fzf-git.sh
 
