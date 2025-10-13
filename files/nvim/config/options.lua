@@ -3,3 +3,5 @@
 -- Add any additional options here
 
 vim.g.rustfmt_autosave = 1
+-- Enable this option to avoid conflicts with Prettier.
+vim.g.lazyvim_prettier_needs_config = true

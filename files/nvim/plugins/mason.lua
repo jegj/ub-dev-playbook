@@ -27,6 +27,7 @@ return {
 				"taplo",
 				"vtsls",
 				"yamllint",
+				"biome",
 			},
 		},
 	},
