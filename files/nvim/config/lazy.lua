@@ -24,6 +24,11 @@ require("lazy").setup({
 		{ import = "lazyvim.plugins.extras.editor.aerial" },
 		{ import = "lazyvim.plugins.extras.coding.mini-surround" },
 		-- { import = "lazyvim.plugins.extras.ai.codeium" },
+		-- THE FOLLOWING LIST WERE INSTALLED DIRECTLY BY LAZYEXTRAS
+		-- { import = "lazyvim.plugins.extras.ai.copilot-chat" },
+		-- { import = "lazyvim.plugins.extras.formatting.biome" },
+		-- { import = "lazyvim.plugins.extras.formatting.prettier" },
+		-- { import = "lazyvim.plugins.extras.linting.eslint" },
 
 		-- { import = "lazyvim.plugins.extras.ui.edgy" },
 		-- { import = "lazyvim.plugins.extras.formatting.prettier" },
