@@ -154,3 +154,5 @@ _fzf_compgen_dir() {
 
 source ~/fzf-git.sh/fzf-git.sh
 
+# prompt config
+eval "$(oh-my-posh init zsh --config gruvbox)"

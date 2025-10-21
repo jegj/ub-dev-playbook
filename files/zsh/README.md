@@ -11,3 +11,4 @@
 - [Video with nice config](https://www.youtube.com/watch?v=mmqDYw9C30I)
 - [Sin-cy dotfiles](https://github.com/Sin-cy/dotfiles)
 - [craftzdog](https://github.com/craftzdog/dotfiles-public/)
+- [oh-my-posh](https://github.com/JanDeDobbeleer/oh-my-posh/tree/main)
