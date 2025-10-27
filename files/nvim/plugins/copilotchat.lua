@@ -18,7 +18,7 @@ return {
 	},
 	build = "make tiktoken",
 	opts = {
-		model = "claude-4.5-sonnet",
+		model = "claude-sonnet-4.5",
 		prompts = vim.tbl_extend("force", prompts, {
 			Rename = {
 				prompt = "Please rename the variable correctly in given selection based on context.",
