@@ -79,6 +79,12 @@
       tags:
         - local
 
+    - name: Import claude settings
+      ansible.builtin.import_tasks: tasks/claude.yml
+      tags:
+        - local
+        - claude
+
     - name: Import alias
       ansible.builtin.import_tasks: tasks/alias.yml
       tags:
