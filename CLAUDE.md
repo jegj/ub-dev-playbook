@@ -101,3 +101,4 @@ Dotfiles and configs copied to user home:
 - Deb packages include name and URL pairs
 - Bash aliases defined as alias/command pairs
 - When a new ansible tag/task is added, also update the readme to reference the new tag
+- After changing .yml files, run `./lint.sh` to ensure syntax and style compliance
