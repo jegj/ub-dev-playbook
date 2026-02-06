@@ -18,3 +18,16 @@
     dest: "{{ ansible_env.HOME }}/.claude/settings.json"
     backup: yes
     mode: "0664"
+
+- name: Ensure ~/.claude/agents/ directory exists
+  ansible.builtin.file:
+    path: "{{ ansible_env.HOME }}/.claude/agents"
+    state: directory
+    mode: "0755"
+
+- name: Copy claude agents
+  ansible.builtin.copy:
+    src: "files/claude/agents/"
+    dest: "{{ ansible_env.HOME }}/.claude/agents/"
+    backup: yes
+    mode: "0664"
