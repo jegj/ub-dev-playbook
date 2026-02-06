@@ -31,3 +31,9 @@
     dest: "{{ ansible_env.HOME }}/.claude/agents/"
     backup: yes
     mode: "0664"
+
+- name: Install claude skill {{ item }}
+  ansible.builtin.command:
+    cmd: npx skills add composiohq/awesome-claude-skills@{{ item }} -g -y
+    creates: "{{ ansible_env.HOME }}/.claude/skills/{{ item }}"
+  loop: "{{ claude_skills }}"

@@ -3,11 +3,12 @@
 ## MCP
 
 - <https://github.com/upstash/context7>
+- <https://github.com/github/github-mcp-server>
 
 ## skills
 
 ```sh
-npx skills add https://github.com/composiohq/awesome-claude-skills --skill content-research-writer -y
+npx skills add composiohq/awesome-claude-skills@content-research-writer -g -y
 ```
 
 - <https://skills.sh/>

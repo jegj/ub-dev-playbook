@@ -131,6 +131,9 @@ deb_pkgs:
   - name: freetube
     url: https://github.com/FreeTubeApp/FreeTube/releases/download/v0.23.3-beta/freetube_0.23.3_amd64.deb
 
+claude_skills:
+  - content-research-writer  # https://skills.sh/
+
 bash_alias_path: "{{ ansible_env.HOME }}/.bash_aliases"
 
 bash_aliases:
