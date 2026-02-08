@@ -1,6 +1,17 @@
 ---
 name: refactor-code-agent
-description: Use this agent when the user has written or modified code and wants to analyze it for improvements, refactoring opportunities, readability enhancements, performance optimizations, or structural improvements using the Serena MCP tool. Examples:\n\n- User: "I just finished implementing the user authentication module"\n  Assistant: "Let me use the serena-code-analyzer agent to review your authentication code for potential improvements"\n\n- User: "Can you check if this function could be optimized?"\n  Assistant: "I'll launch the serena-code-analyzer agent to analyze this function using Serena MCP"\n\n- User: "I've refactored the data layer, want to make sure it's solid"\n  Assistant: "Let me use the serena-code-analyzer agent to perform a comprehensive analysis of your refactored data layer"
+description: |
+Use this agent when the user has written or modified code and wants to analyze it for improvements, refactoring opportunities, readability enhancements, performance optimizations, or structural improvements using the Serena MCP tool if it is isntalled. Example: 
+
+  - User: "I just finished implementing the user authentication module"
+    Assistant: "Let me use the serena-code-analyzer agent to review your authentication code for potential improvements"
+
+  - User: "Can you check if this function could be optimized?"
+    Assistant: "I'll launch the serena-code-analyzer agent to analyze this function using Serena MCP"
+
+  - User: "I've refactored the data layer, want to make sure it's solid"
+    Assistant: "Let me use the serena-code-analyzer agent to perform a comprehensive analysis of your refactored data layer"
+
 model: sonnet
 color: yellow
 ---
