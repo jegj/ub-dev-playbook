@@ -23,6 +23,7 @@ require("lazy").setup({
 		{ import = "lazyvim.plugins.extras.ai.copilot" },
 		{ import = "lazyvim.plugins.extras.editor.aerial" },
 		{ import = "lazyvim.plugins.extras.coding.mini-surround" },
+		{ import = "lazyvim.plugins.extras.editor.illuminate" },
 		-- THE FOLLOWING LIST ARE NICE ON SOME SETUPS
 		-- { import = "lazyvim.plugins.extras.ai.codeium" },
 		-- { import = "lazyvim.plugins.extras.ai.sql" },
