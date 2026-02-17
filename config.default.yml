@@ -54,7 +54,7 @@ apt_pkgs:
   - vagrant
   - python3.10-venv  # package for lazyvim and ansible lint mason package
   - gparted
-  - lazygit   #  nvim dep
+  - lazygit   #  nvim dep  FIXME: Use binary instead
   - fd-find   #  fdfind command. It is a nvim dep
   - ripgrep   #  nvim dep
   - gnupg     # gpg encryption

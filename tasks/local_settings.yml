@@ -37,3 +37,10 @@
     src: "files/ssh/config"
     dest: "{{ ansible_env.HOME }}/.ssh/config"
     mode: "0664"
+
+- name: Copy fzf-git.sh
+  ansible.builtin.copy:
+    src: "files/fzf-git/fzf-git.sh"
+    dest: "{{ ansible_env.HOME }}/fzf-git.sh/fzf-git.sh"
+    backup: yes
+    mode: "0755"
