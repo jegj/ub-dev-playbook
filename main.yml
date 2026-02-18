@@ -68,6 +68,12 @@
         - sw
         - npm
 
+    - name: Import fzf
+      ansible.builtin.import_tasks: tasks/fzf.yml
+      tags:
+        - sw
+        - fzf
+
     - name: Import neovim
       ansible.builtin.import_tasks: tasks/neovim.yml
       tags:

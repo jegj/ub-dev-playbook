@@ -1,0 +1,7 @@
+---
+- name: Download and extract fzf binary
+  ansible.builtin.unarchive:
+    src: "{{ fzf_url }}"
+    dest: /usr/local/bin
+    remote_src: yes
+    mode: "0755"
