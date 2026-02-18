@@ -1,7 +1,16 @@
 ---
+- name: Get installed fzf version
+  ansible.builtin.command: fzf --version
+  register: fzf_installed_version
+  ignore_errors: true
+  changed_when: false
+
 - name: Download and extract fzf binary
   ansible.builtin.unarchive:
     src: "{{ fzf_url }}"
     dest: /usr/local/bin
-    remote_src: yes
+    remote_src: true
     mode: "0755"
+  become: true
+  become_user: root
+  when: fzf_installed_version.rc != 0 or fzf_version not in fzf_installed_version.stdout
