@@ -4,15 +4,50 @@ return {
 		servers = {
 			eslint = {},
 			tsserver = {
-				enable = false,
+				enabled = false,
 			},
+			-- tsserver = {
+			--   root_dir = function(...)
+			--     return require("lspconfig.util").root_pattern(".git")(...)
+			--   end,
+			--   single_file_support = false,
+			--   settings = {
+			--     typescript = {
+			--       inlayHints = {
+			--         includeInlayParameterNameHints = "literal",
+			--         includeInlayParameterNameHintsWhenArgumentMatchesName = false,
+			--         includeInlayFunctionParameterTypeHints = true,
+			--         includeInlayVariableTypeHints = false,
+			--         includeInlayPropertyDeclarationTypeHints = true,
+			--         includeInlayFunctionLikeReturnTypeHints = true,
+			--         includeInlayEnumMemberValueHints = true,
+			--       },
+			--     },
+			--     javascript = {
+			--       inlayHints = {
+			--         includeInlayParameterNameHints = "all",
+			--         includeInlayParameterNameHintsWhenArgumentMatchesName = false,
+			--         includeInlayFunctionParameterTypeHints = true,
+			--         includeInlayVariableTypeHints = true,
+			--         includeInlayPropertyDeclarationTypeHints = true,
+			--         includeInlayFunctionLikeReturnTypeHints = true,
+			--         includeInlayEnumMemberValueHints = true,
+			--       },
+			--     },
+			--   },
+			--   keys = {
+			--     { "<leader>co", "<cmd>TypescriptOrganizeImports<CR>", desc = "Organize Imports" },
+			--     { "<leader>cR", "<cmd>TypescriptRenameFile<CR>", desc = "Rename File" },
+			--   },
+			-- },
 		},
 		setup = {
 			eslint = function()
-				require("lazyvim.util").lsp.on_attach(function(client)
+				-- require("lazyvim.util").lsp.on_attach(function(client)
+				Snacks.util.lsp.on({}, function(_, client)
 					if client.name == "eslint" then
 						client.server_capabilities.documentFormattingProvider = true
-					elseif client.name == "tsserver" or client.name == "vtsls" or client.name == "intelephense" then
+					elseif client.name == "tsserver" then
 						client.server_capabilities.documentFormattingProvider = false
 					end
 				end)
