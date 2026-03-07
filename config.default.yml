@@ -137,7 +137,7 @@ deb_pkgs:
 
 claude_skills:
   - content-research-writer  # https://skills.sh/
-  - mcollina/skills # https://github.com/mcollina/skills
+  - mcollina/skills  # https://github.com/mcollina/skills
 
 bash_alias_path: "{{ ansible_env.HOME }}/.bash_aliases"
 
