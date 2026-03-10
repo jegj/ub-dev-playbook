@@ -85,6 +85,7 @@ snap_pkgs:
   - telegram-desktop
   - cacher  # https://www.cacher.io/
   - dbeaver-ce  # https://dbeaver.io/
+  - tiled
 
 pip_pkgs:
   - ansible-lint
