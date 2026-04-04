@@ -37,3 +37,16 @@
     cmd: npx skills add composiohq/awesome-claude-skills@{{ item }} -g -y
     creates: "{{ ansible_env.HOME }}/.claude/skills/{{ item }}"
   loop: "{{ claude_skills }}"
+
+- name: Ensure ~/.config/ccstatusline/ directory exists
+  ansible.builtin.file:
+    path: "{{ ansible_env.HOME }}/.config/ccstatusline"
+    state: directory
+    mode: "0755"
+
+- name: Copy ccstatusline settings.json
+  ansible.builtin.copy:
+    src: files/.config/ccstatusline/settings.json
+    dest: "{{ ansible_env.HOME }}/.config/ccstatusline/settings.json"
+    backup: yes
+    mode: "0664"
