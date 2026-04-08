@@ -5,7 +5,7 @@
 - use casual tone, not overly formal
 - always respond in markdown format
 - use bullet points instead of pAskUserQuestionToolaragraphs
-- use the AskUserQuestionTool during question/answers sessions
+- use the AskUserQuestionTool during question/answers sessions or Whenever you need user input
 
 # coding style preferences
 
