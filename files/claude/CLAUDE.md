@@ -4,7 +4,8 @@
 - keep responses short and cocise
 - use casual tone, not overly formal
 - always respond in markdown format
-- use bullet points instead of paragraphs
+- use bullet points instead of pAskUserQuestionToolaragraphs
+- use the AskUserQuestionTool during question/answers sessions
 
 # coding style preferences
 
@@ -23,4 +24,3 @@
 - NEVER create files unless they're absolutely necessary for achieving your goal.
 - ALWAYS prefer editing an existing file to creating a new one.
 - NEVER proactively create documentation files (*.md) or README files. Only create documentation files if explicitly requested by the User.
-
