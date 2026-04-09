@@ -139,7 +139,7 @@ deb_pkgs:
 claude_skills:
   - content-research-writer  # https://skills.sh/
   - mcollina/skills  # https://github.com/mcollina/skills
-  - mattpocock/skills/write-a-prd # https://github.com/mattpocock/skills
+  - mattpocock/skills/write-a-prd  # https://github.com/mattpocock/skills
   - mattpocock/skills/write-a-skill
   - mattpocock/skills/grill-me
 
