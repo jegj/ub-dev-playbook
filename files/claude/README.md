@@ -12,6 +12,7 @@ npx skills add composiohq/awesome-claude-skills@content-research-writer -g -y
 ```
 
 - <https://skills.sh/>
+- <https://github.com/mattpocock/skills>
 
 ## Agents
 
@@ -26,3 +27,9 @@ npx skills add composiohq/awesome-claude-skills@content-research-writer -g -y
 /prd-to-plan @prd/intructor-analytics-dashboard-revenue
 
 ```
+
+## Debugging statusline
+
+```sh
+echo '{"model":{"display_name":"Opus"},"session_id":"test"}' | npx -y ccstatusline@latest
+``
