@@ -142,6 +142,9 @@ claude_skills:
   - mattpocock/skills/write-a-prd  # https://github.com/mattpocock/skills
   - mattpocock/skills/write-a-skill
   - mattpocock/skills/grill-me
+  - mattpocock/skills/write-a-prd
+  - mattpocock/skills/prd-to-plan
+  - mattpocock/skills/prd-to-issues
 
 bash_alias_path: "{{ ansible_env.HOME }}/.bash_aliases"
 
