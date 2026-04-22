@@ -11,6 +11,7 @@
 
 - avoid short variables name like 'x' or 'a'
 - Follow Test Driven Development
+- Replaced Nested Conditionals With Early Returns
 
 # git instructions
 
