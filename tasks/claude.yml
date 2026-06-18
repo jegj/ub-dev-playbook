@@ -38,6 +38,18 @@
     creates: "{{ ansible_env.HOME }}/.claude/skills/{{ item }}"
   loop: "{{ claude_skills }}"
 
+- name: Add claude plugin marketplace {{ item.name }}
+  ansible.builtin.command:
+    cmd: claude plugin marketplace add {{ item.repo }}
+    creates: "{{ ansible_env.HOME }}/.claude/plugins/marketplaces/{{ item.name }}"
+  loop: "{{ claude_marketplaces }}"
+
+- name: Install claude plugin {{ item }}
+  ansible.builtin.command:
+    cmd: claude plugin install {{ item }}
+    creates: "{{ ansible_env.HOME }}/.claude/plugins/cache/{{ item.split('@')[1] }}/{{ item.split('@')[0] }}"
+  loop: "{{ claude_plugins }}"
+
 - name: Ensure ~/.config/ccstatusline/ directory exists
   ansible.builtin.file:
     path: "{{ ansible_env.HOME }}/.config/ccstatusline"

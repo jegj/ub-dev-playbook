@@ -58,7 +58,7 @@ Follow [config.default.yml](./config.default.yml) for more information
 - `npm` : npm global packages installation
 - `zsh`: zsh shell installation & configuration
 - `tpm`: Tmux plugin manager installation
-- `claude`: Claude Code settings
+- `claude`: Claude Code settings, skills, marketplaces & plugins (`claude_skills`, `claude_marketplaces`, `claude_plugins`)
 - `git_clone_repo`: Clone repositories
 
 ## Inspiration

@@ -146,6 +146,22 @@ claude_skills:
   - mattpocock/skills/prd-to-plan
   - mattpocock/skills/prd-to-issues
 
+claude_marketplaces:
+  - {name: claude-plugins-official, repo: anthropics/claude-plugins-official}
+  - {name: superpowers-marketplace, repo: obra/superpowers-marketplace}
+  - {name: ponytail, repo: DietrichGebert/ponytail}
+
+claude_plugins:
+  - frontend-design@claude-plugins-official
+  - code-review@claude-plugins-official
+  - github@claude-plugins-official
+  - feature-dev@claude-plugins-official
+  - typescript-lsp@claude-plugins-official
+  - code-simplifier@claude-plugins-official
+  # - serena@claude-plugins-official
+  - superpowers@claude-plugins-official
+  - ponytail@ponytail
+
 bash_alias_path: "{{ ansible_env.HOME }}/.bash_aliases"
 
 bash_aliases:
