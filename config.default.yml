@@ -11,12 +11,14 @@ apt_key:
   - https://apt.releases.hashicorp.com/gpg
   - https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
   - https://apt.fury.io/wez/gpg.key
+  - https://downloads.claude.ai/claude-desktop/key.asc
 
 apt_repos:
   - ppa:solaar-unifying/stable
   - ppa:cappelikan/ppa
   - deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main
   - deb [signed-by=/usr/share/keyrings/wezterm-fury.gpg] https://apt.fury.io/wez/ * *
+  - deb [arch=amd64,arm64 signed-by=/usr/share/keyrings/claude-desktop-archive-keyring.asc] https://downloads.claude.ai/claude-desktop/apt/stable stable main
 
 apt_pkgs:
   - apt-transport-https
@@ -62,6 +64,7 @@ apt_pkgs:
   - gnupg     # gpg encryption
   - brave-browser
   - wezterm   # https://wezfurlong.org/wezterm/
+  - claude-desktop  # https://code.claude.com/docs/en/desktop-linux
   - luarocks  # nvim setup and plugins
   - lm-sensors  # tmux gpu/cpu temperature
   - yamllint
