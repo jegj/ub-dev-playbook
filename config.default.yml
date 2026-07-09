@@ -141,13 +141,15 @@ deb_pkgs:
 
 claude_skills:
   - content-research-writer  # https://skills.sh/
-  - mcollina/skills  # https://github.com/mcollina/skills
+  - mcollina/skills/typescript-magician  # https://github.com/mcollina/skills
+  - mcollina/skills/node # https://github.com/mcollina/skills
   - mattpocock/skills/write-a-prd  # https://github.com/mattpocock/skills
   - mattpocock/skills/write-a-skill
   - mattpocock/skills/grill-me
   - mattpocock/skills/write-a-prd
   - mattpocock/skills/prd-to-plan
   - mattpocock/skills/prd-to-issues
+  - mattpocock/skills/prototype
 
 claude_marketplaces:
   - {name: claude-plugins-official, repo: anthropics/claude-plugins-official}
