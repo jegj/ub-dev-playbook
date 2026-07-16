@@ -2,7 +2,9 @@ return {
 	"neovim/nvim-lspconfig",
 	opts = {
 		servers = {
-			eslint = {},
+			eslint = {
+				useFlatConfig = true,
+			},
 			tsserver = {
 				enabled = false,
 			},
