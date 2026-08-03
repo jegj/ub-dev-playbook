@@ -32,6 +32,18 @@
     dest: "{{ ansible_env.HOME }}/.local/bin/better-branch"
     mode: "0755"
 
+- name: Copy bak script
+  ansible.builtin.copy:
+    src: "files/.local/bin/bak.sh"
+    dest: "{{ ansible_env.HOME }}/.local/bin/bak"
+    mode: "0755"
+
+- name: Copy portcheck script
+  ansible.builtin.copy:
+    src: "files/.local/bin/portcheck.sh"
+    dest: "{{ ansible_env.HOME }}/.local/bin/portcheck"
+    mode: "0755"
+
 - name: Copy ssh config file
   ansible.builtin.copy:
     src: "files/ssh/config"
