@@ -55,6 +55,7 @@ Follow [config.default.yml](./config.default.yml) for more information
 - `admin` : Admin task like sudoers
 - `neovim` : Neovim installation
 - `nvm` : nvm installation
+- `pnpm` : pnpm installation
 - `npm` : npm global packages installation
 - `zsh`: zsh shell installation & configuration
 - `tpm`: Tmux plugin manager installation

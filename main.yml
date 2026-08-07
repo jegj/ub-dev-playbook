@@ -62,6 +62,12 @@
         - sw
         - awscli
 
+    - name: Import pnpm
+      ansible.builtin.import_tasks: tasks/pnpm.yml
+      tags:
+        - sw
+        - pnpm
+
     - name: Import npm global packages
       ansible.builtin.import_tasks: tasks/npm.yml
       tags:

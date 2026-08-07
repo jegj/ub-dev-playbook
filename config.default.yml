@@ -109,6 +109,8 @@ git_repos:
 
 nvm_url: https://raw.githubusercontent.com/nvm-sh/nvm/v{{ nvm_version }}/install.sh
 
+pnpm_url: https://get.pnpm.io/install.sh
+
 awscli_url: https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip
 
 zsh_url: https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
