@@ -1,0 +1,12 @@
+---
+- name: Download {{ installer_url }}
+  ansible.builtin.get_url:
+    url: "{{ installer_url }}"
+    dest: /tmp/curl-installer-{{ installer_creates | basename }}.sh
+    mode: 0744
+  changed_when: no
+
+- name: Execute installer script
+  ansible.builtin.command: /tmp/curl-installer-{{ installer_creates | basename }}.sh
+  args:
+    creates: "{{ installer_creates }}"

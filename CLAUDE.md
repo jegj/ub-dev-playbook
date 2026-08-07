@@ -60,7 +60,7 @@ Each task file handles a specific component:
 - `snap_pkgs.yml` - Snap packages
 - `pip_pkgs.yml` - Python pip packages
 - `neovim.yml` - Neovim installation from release tarball
-- `nvm.yml` - Node Version Manager setup
+- `curl_installer.yml` - Shared curl-installer-script pattern (download + run once via `creates:` guard), invoked with `installer_url`/`installer_creates` vars; used by the `nvm` and `pnpm` tags in `main.yml`
 - `npm.yml` - Global npm packages
 - `zsh.yml` - ZSH and oh-my-zsh
 - `local_settings.yml` - Dotfiles (vim, tmux, git, ssh, scripts)
@@ -100,5 +100,6 @@ Dotfiles and configs copied to user home:
 - Package lists use YAML arrays (apt_pkgs, snap_pkgs, pip_pkgs, npm_glob_pkgs)
 - Deb packages include name and URL pairs
 - Bash aliases defined as alias/command pairs
+- New tools installed via a downloaded curl installer script (download + run once) should reuse `tasks/curl_installer.yml` via `import_tasks` with `installer_url`/`installer_creates` vars, not a new task file
 - When a new ansible tag/task is added, also update the readme to reference the new tag
 - After changing .yml files, run `./lint.sh` to ensure syntax and style compliance

@@ -51,7 +51,10 @@
         - zsh
 
     - name: Import nvm
-      ansible.builtin.import_tasks: tasks/nvm.yml
+      ansible.builtin.import_tasks: tasks/curl_installer.yml
+      vars:
+        installer_url: "{{ nvm_url }}"
+        installer_creates: "{{ ansible_env.HOME }}/.nvm/nvm.sh"
       tags:
         - sw
         - nvm
@@ -63,7 +66,10 @@
         - awscli
 
     - name: Import pnpm
-      ansible.builtin.import_tasks: tasks/pnpm.yml
+      ansible.builtin.import_tasks: tasks/curl_installer.yml
+      vars:
+        installer_url: "{{ pnpm_url }}"
+        installer_creates: "{{ ansible_env.HOME }}/.local/share/pnpm/pnpm"
       tags:
         - sw
         - pnpm
