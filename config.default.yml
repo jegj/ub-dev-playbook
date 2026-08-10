@@ -71,11 +71,13 @@ apt_pkgs:
   - eza
   - bat
   - nvtop  # htop for gpu
+  - imagemagick  # dependecy for snack.Image
 
 npm_glob_pkgs:
   - tree-sitter-cli  # nvim dep
   - neovim  # nvim  dep
   - yarn
+  - "@mermaid-js/mermaid-cli"  # dep to render mermaid diagrams with Snacks.image
   - protondb-cli
 
 snap_pkgs:
@@ -88,7 +90,6 @@ snap_pkgs:
   - telegram-desktop
   - cacher  # https://www.cacher.io/
   - dbeaver-ce  # https://dbeaver.io/
-  - tiled
 
 pip_pkgs:
   - ansible-lint
@@ -137,9 +138,6 @@ deb_pkgs:
 
   - name: virtualbox
     url: https://download.virtualbox.org/virtualbox/7.0.10/virtualbox-7.0_7.0.10-158379~Ubuntu~jammy_amd64.deb
-
-  - name: freetube
-    url: https://github.com/FreeTubeApp/FreeTube/releases/download/v0.23.3-beta/freetube_0.23.3_amd64.deb
 
 claude_skills:
   - content-research-writer  # https://skills.sh/
