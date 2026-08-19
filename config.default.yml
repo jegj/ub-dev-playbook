@@ -72,6 +72,7 @@ apt_pkgs:
   - bat
   - nvtop  # htop for gpu
   - imagemagick  # dependecy for snack.Image
+  - pv  # progress bar command utility
 
 npm_glob_pkgs:
   - tree-sitter-cli  # nvim dep
