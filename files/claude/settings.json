@@ -38,16 +38,21 @@
     "code-review@claude-plugins-official": true,
     "github@claude-plugins-official": false,
     "feature-dev@claude-plugins-official": true,
-    "typescript-lsp@claude-plugins-official": true,
     "code-simplifier@claude-plugins-official": true,
-    "serena@claude-plugins-official": false,
-    "superpowers@claude-plugins-official": true
+    "superpowers@claude-plugins-official": true,
+    "ponytail@ponytail": true
   },
   "extraKnownMarketplaces": {
     "superpowers-marketplace": {
       "source": {
         "source": "github",
         "repo": "obra/superpowers-marketplace"
+      }
+    },
+    "ponytail": {
+      "source": {
+        "source": "github",
+        "repo": "DietrichGebert/ponytail"
       }
     }
   },
