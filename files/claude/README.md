@@ -4,6 +4,7 @@
 
 - <https://github.com/upstash/context7>
 - <https://github.com/github/github-mcp-server>
+- <https://github.com/kadajett/agent-nestjs-skills>
 
 ## skills
 
