@@ -32,11 +32,13 @@
     backup: yes
     mode: "0664"
 
-- name: Install claude skill {{ item }}
+- name: Install claude skill {{ item.1 }}
   ansible.builtin.command:
-    cmd: npx skills add composiohq/awesome-claude-skills@{{ item }} -g -y
-    creates: "{{ ansible_env.HOME }}/.claude/skills/{{ item }}"
-  loop: "{{ claude_skills }}"
+    cmd: npx skills add {{ item.0.repo }} --skill {{ item.1 }} -a claude-code -g -y
+    creates: "{{ ansible_env.HOME }}/.claude/skills/{{ item.1 }}"
+  loop: "{{ claude_skills | subelements('skills') }}"
+  loop_control:
+    label: "{{ item.1 }}"
 
 - name: Add claude plugin marketplace {{ item.name }}
   ansible.builtin.command:

@@ -141,15 +141,28 @@ deb_pkgs:
     url: https://download.virtualbox.org/virtualbox/7.0.10/virtualbox-7.0_7.0.10-158379~Ubuntu~jammy_amd64.deb
 
 claude_skills:
-  - content-research-writer  # https://skills.sh/
-  - mcollina/skills/typescript-magician  # https://github.com/mcollina/skills
-  - mcollina/skills/node  # https://github.com/mcollina/skills
-  - mattpocock/skills/write-a-prd  # https://github.com/mattpocock/skills
-  - mattpocock/skills/write-a-skill
-  - mattpocock/skills/grill-me
-  - mattpocock/skills/prd-to-plan
-  - mattpocock/skills/prd-to-issues
-  - mattpocock/skills/prototype
+  - repo: https://github.com/mcollina/skills
+    skills:
+      - typescript-magician
+      - node
+      - fastify-best-practices
+      - octocat
+  - repo: https://github.com/mattpocock/skills  
+    skills:
+      - domain-modeling
+      - codebase-design
+      - grill-with-docs
+      - grilling
+      - to-spec
+      - to-tickets
+      - implement
+      - tdd
+      - handoff
+      - research
+      - teach
+  - repo: https://github.com/kadajett/agent-nestjs-skills
+    skills:
+      - nestjs-best-practices
 
 claude_marketplaces:
   - {name: claude-plugins-official, repo: anthropics/claude-plugins-official}
@@ -160,10 +173,7 @@ claude_plugins:
   - frontend-design@claude-plugins-official
   - code-review@claude-plugins-official
   - github@claude-plugins-official
-  - feature-dev@claude-plugins-official
-  - typescript-lsp@claude-plugins-official
   - code-simplifier@claude-plugins-official
-  # - serena@claude-plugins-official
   - superpowers@claude-plugins-official
   - ponytail@ponytail
 
