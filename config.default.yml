@@ -14,6 +14,7 @@ apt_key:
   - https://downloads.claude.ai/claude-desktop/key.asc
 
 apt_repos:
+  - universe
   - ppa:solaar-unifying/stable
   - ppa:cappelikan/ppa
   - deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main
@@ -33,6 +34,7 @@ apt_pkgs:
   - vim
   - shellcheck   # https://github.com/koalaman/shellcheck
   - htop
+  - libfuse2t64
   - solaar       # https://pwr-solaar.github.io/Solaar/
   - firefox
   - terraform
@@ -147,7 +149,7 @@ claude_skills:
       - node
       - fastify-best-practices
       - octocat
-  - repo: https://github.com/mattpocock/skills  
+  - repo: https://github.com/mattpocock/skills
     skills:
       - domain-modeling
       - codebase-design
