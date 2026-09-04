@@ -2,7 +2,7 @@
 # https://github.com/nvm-sh/nvm
 nvm_version: 0.39.5
 # https://github.com/junegunn/fzf
-fzf_version: 0.67.0
+fzf_version: 0.74.3
 # Franz https://meetfranz.com/
 franz_version: 5.10.0
 
