@@ -13,6 +13,6 @@
     src: templates/admin.sudoers.j2
     dest: /etc/sudoers.d/{{ admin_user }}
     validate: "visudo -cf %s"
-    mode: 0440
+    mode: "0440"
   become: yes
   become_user: root
