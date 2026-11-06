@@ -40,7 +40,8 @@
     "feature-dev@claude-plugins-official": true,
     "code-simplifier@claude-plugins-official": true,
     "superpowers@claude-plugins-official": true,
-    "ponytail@ponytail": true
+    "ponytail@ponytail": true,
+    "ui-ux-pro-max@ui-ux-pro-max-skill": true
   },
   "extraKnownMarketplaces": {
     "superpowers-marketplace": {
@@ -53,6 +54,12 @@
       "source": {
         "source": "github",
         "repo": "DietrichGebert/ponytail"
+      }
+    },
+    "ui-ux-pro-max-skill": {
+      "source": {
+        "source": "github",
+        "repo": "nextlevelbuilder/ui-ux-pro-max-skill"
       }
     }
   },

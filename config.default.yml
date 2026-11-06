@@ -164,11 +164,15 @@ claude_skills:
   - repo: https://github.com/kadajett/agent-nestjs-skills
     skills:
       - nestjs-best-practices
+  - repo: https://github.com/cloudflare/security-audit-skill
+    skills:
+      - security-audit
 
 claude_marketplaces:
   - {name: claude-plugins-official, repo: anthropics/claude-plugins-official}
   - {name: superpowers-marketplace, repo: obra/superpowers-marketplace}
   - {name: ponytail, repo: DietrichGebert/ponytail}
+  - {name: ui-ux-pro-max-skill, repo: nextlevelbuilder/ui-ux-pro-max-skill}
 
 claude_plugins:
   - frontend-design@claude-plugins-official
@@ -177,6 +181,7 @@ claude_plugins:
   - code-simplifier@claude-plugins-official
   - superpowers@claude-plugins-official
   - ponytail@ponytail
+  - ui-ux-pro-max@ui-ux-pro-max-skill
 
 bash_alias_path: "{{ ansible_env.HOME }}/.bash_aliases"
 
