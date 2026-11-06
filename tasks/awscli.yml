@@ -1,9 +1,9 @@
 ---
 - name: Check if aws cli is already installed
   ansible.builtin.command: aws --version
-  ignore_errors: yes
   register: awscli_version
-  changed_when: awscli_version.rc != 0
+  failed_when: false
+  changed_when: false
 
 - name: Extract awscli in /tmp folder
   ansible.builtin.unarchive:

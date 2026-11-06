@@ -2,7 +2,7 @@
 - name: Get installed fzf version
   ansible.builtin.command: fzf --version
   register: fzf_installed_version
-  ignore_errors: true
+  failed_when: false
   changed_when: false
 
 - name: Download and extract fzf binary
