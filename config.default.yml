@@ -3,6 +3,10 @@
 nvm_version: 0.39.5
 # https://github.com/junegunn/fzf
 fzf_version: 0.74.3
+# https://github.com/neovim/neovim
+neovim_version: 0.12.6
+# https://github.com/ohmyzsh/ohmyzsh (commit sha, no tagged releases)
+ohmyzsh_ref: b509b1c6ed0c1ba37de12cbd37f30b2b2f61193a
 # Franz https://meetfranz.com/
 franz_version: 5.10.0
 
@@ -116,9 +120,9 @@ pnpm_url: https://get.pnpm.io/install.sh
 
 awscli_url: https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip
 
-zsh_url: https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
+zsh_url: https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/{{ ohmyzsh_ref }}/tools/install.sh
 
-neovim_url: https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
+neovim_url: https://github.com/neovim/neovim/releases/download/v{{ neovim_version }}/nvim-linux-x86_64.tar.gz
 
 fzf_url: https://github.com/junegunn/fzf/releases/download/v{{ fzf_version }}/fzf-{{ fzf_version }}-linux_amd64.tar.gz
 
