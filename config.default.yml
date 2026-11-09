@@ -1,14 +1,14 @@
 ---
 # https://github.com/nvm-sh/nvm
-nvm_version: 0.39.5
+nvm_version: 0.41.0
 # https://github.com/junegunn/fzf
-fzf_version: 0.74.3
+fzf_version: 0.74.5
 # https://github.com/neovim/neovim
 neovim_version: 0.12.6
 # https://github.com/ohmyzsh/ohmyzsh (commit sha, no tagged releases)
 ohmyzsh_ref: b509b1c6ed0c1ba37de12cbd37f30b2b2f61193a
 # Franz https://meetfranz.com/
-franz_version: 5.10.0
+franz_version: 5.11.0
 
 apt_key:
   - https://www.pgadmin.org/static/packages_pgadmin_org.pub
