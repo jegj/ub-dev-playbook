@@ -25,4 +25,4 @@
 # 
 # m h  dom mon dow   command
 SHELL=/bin/bash
-55 23 * * * XDG_RUNTIME_DIR=/run/user/$(id -u) /home/jegj/.local/bin/pdsync -t /home/jegj  -d "/media/jegj/ADATA HD710/jegj_backups" -p 10 -s s3://jegj-backups -c -u 1 -e jegj57@gmail.com -r /home/jegj/.gnupg/passphrase  /home/jegj/Videos /home/jegj/Documents /home/jegj/Pictures /home/jegj/pws /home/jegj/.ssh
+55 23 * * * XDG_RUNTIME_DIR=/run/user/$(id -u) /home/jegj/.local/bin/pdsync -t /home/jegj  -d "/run/media/jegj/ADATA HD710/jegj_backups" -p 10 -s s3://jegj-backups -c -u 1 -e jegj57@gmail.com -r /home/jegj/.gnupg/passphrase  /home/jegj/Videos /home/jegj/Documents /home/jegj/Pictures /home/jegj/pws /home/jegj/.ssh
