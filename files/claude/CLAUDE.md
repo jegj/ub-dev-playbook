@@ -10,13 +10,11 @@
 # coding style preferences
 
 - avoid short variables name like 'x' or 'a'
-- Follow Test Driven Development
 - Replaced Nested Conditionals With Early Returns
 
 # git instructions
 
 - A commit should follow the conventional-commit standard according to change e.g feat: <description>
-- Capitalize the first letter of the description
 - The commit description should explain the what and why but not too long.
 
 # important-instruction-reminders
